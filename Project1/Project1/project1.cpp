@@ -20,3 +20,7 @@ int main()
 	float fnum = 0.0;
 
 	fnum = 3.5;
+
+	return = 0;
+
+}
