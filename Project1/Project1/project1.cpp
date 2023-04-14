@@ -9,19 +9,23 @@ int main()
 
 	//변수(변하는 수)
 
-	int flyheight = 0:  //정수형 변수 num을 선언(정의)한 후에 0을 넣겠다.
+	//int flyheight = 0:  //정수형 변수 num을 선언(정의)한 후에 0을 넣겠다.
 
-	flyheight = 30; //정수형 변수 num에 3을 넣겠다
-	flyheight = 100: //정수형 변수 num에 3을 넣겠다.
+	//flyheight = 30; //정수형 변수 num에 3을 넣겠다
+	//flyheight = 100: //정수형 변수 num에 3을 넣겠다.
 
-	int power = 0;
-	power = 1:
+	//int power = 0;
+	//power = 1:
 
-	float fnum = 0.0;
+	//float fnum = 0.0;
 
-	fnum = 3.5;
+	//fnum = 3.5;
 
-	printf("Hello World!");
+	//printf("Hello World!\n\n");
+
+	printf("My Name is sangbeck!\n\n");
+
+
     
 
 	return = 0;
