@@ -23,10 +23,9 @@ int main()
 
 	//printf("Hello World!\n\n");
 
-	printf("My Name is sangbeck!\n\n");
+	printf("My Name is sangbeck! \n Nice Meet You \n Where are you from?");
 
-
-    
+ 
 
 	return = 0;
 
