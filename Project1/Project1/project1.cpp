@@ -23,7 +23,7 @@ int main()
 
 	//printf("Hello World!\n\n");
 
-	printf("My Name is sangbeck!");
+	printf("My Name is sangbeck!\n");
 	printf("Lee SangBeck");
     return = 0;
 
