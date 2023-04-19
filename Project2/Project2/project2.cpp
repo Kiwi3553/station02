@@ -38,6 +38,14 @@ int main()
 	b = 20;
 	c = 30;
 
-	printf("a 는 %d이고 b 는 %d이고 c 는 %d입니다.", a, b, c);
+	printf("a 는 %d이고 b 는 %d이고 c 는 %d입니다.\n", a, b, c);
+
+	float d = 1.3f;
+	double e = 1.345232;
+
+	printf("d 는 %f 입니다.\n", d);
+	printf("e 는 %f 입니다.\n", e);
+
+	
 	return 0;
 }
