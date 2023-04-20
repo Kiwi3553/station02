@@ -71,7 +71,7 @@ int main()
 
 	printf("10년 동안의 저축액: %d\n", deposit);*/
 
-	/*환율을 계산하는 프로그램*/
+	/*환율을 계산하는 프로그램
 	float rate;         //원/달러 환율
 	float usd;          //달러화
 	int krw;            //원화
@@ -84,7 +84,20 @@ int main()
 
 	usd = krw / rate;
 
-	printf("원화 %d원은 %f달러 입니다.\n", krw, usd);
+	printf("원화 %d원은 %f달러 입니다.\n", krw, usd);*/
+
+	
+	/*원의 면적을 계산하는 프로그램*/
+
+	float radius;       //원의 반지름
+	float area;         //면적
+
+	printf("반지름을 입력하시오 :");
+	scanf("%f", &radius);
+
+	area = 3.14 * radius * radius;
+
+	printf("원의면적:%f\n", area);
 
 	
 	return 0;
