@@ -60,7 +60,7 @@ int main()
 	sum = x + y;
 	printf("두수의 합: %d", sum);*/
 
-	/*저축액을 계산하는 프로그램*/
+	/*저축액을 계산하는 프로그램
 	int salary;       //월급
 	int deposit;      //저축액
 
@@ -69,7 +69,22 @@ int main()
 
 	deposit = 10 * 12 * salary;
 
-	printf("10년 동안의 저축액: %d\n", deposit);
+	printf("10년 동안의 저축액: %d\n", deposit);*/
+
+	/*환율을 계산하는 프로그램*/
+	float rate;         //원/달러 환율
+	float usd;          //달러화
+	int krw;            //원화
+
+	printf("달러에 대한 원화 환율을 입력하시오:");    //입력 안내 메시지
+	scanf("%f", &rate);                               //사용자로부터 환율입력
+
+	printf("원화 금액을 입력하시오:");
+	scanf("%d", &krw);
+
+	usd = krw / rate;
+
+	printf("원화 %d원은 %f달러 입니다.\n", krw, usd);
 
 	
 	return 0;
