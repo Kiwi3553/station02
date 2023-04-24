@@ -87,18 +87,27 @@ int main()
 	printf("원화 %d원은 %f달러 입니다.\n", krw, usd);*/
 
 	
-	/*원의 면적을 계산하는 프로그램*/
+	/*원의 면적을 계산하는 프로그램
 
 	float radius;       //원의 반지름
 	float area;         //면적
 
-	printf("반지름을 입력하시오 :");
+	printf("원의 반지름을 입력하시오:");
 	scanf("%f", &radius);
 
 	area = 3.14 * radius * radius;
 
-	printf("원의면적:%f\n", area);
+	printf("원의면적:%f\n", area);*/
 
-	
+	/*다양한 자료형으로 변수에 저장해보기*/
+	char c; //문자형 변수 c 선언
+	int i;  //정수형 변수 i 선언
+	double interest_rate;  //실수형 변수 interest_rate 선언
+
+	c = 'a';   //문자형 변수 c에 문자 'a'를 대입
+	i = '60';  //정수형 변수 i에 60을 대입
+	interest_rate = 4.9;  //실수형 변수 interest_rate에 4.9를 대입
+
+
 	return 0;
 }
