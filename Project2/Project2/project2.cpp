@@ -99,15 +99,24 @@ int main()
 
 	printf("원의면적:%f\n", area);*/
 
-	/*다양한 자료형으로 변수에 저장해보기*/
+	/*다양한 자료형으로 변수에 저장해보기
 	char c; //문자형 변수 c 선언
 	int i;  //정수형 변수 i 선언
 	double interest_rate;  //실수형 변수 interest_rate 선언
 
 	c = 'a';   //문자형 변수 c에 문자 'a'를 대입
 	i = '60';  //정수형 변수 i에 60을 대입
-	interest_rate = 4.9;  //실수형 변수 interest_rate에 4.9를 대입
+	interest_rate = 4.9;  //실수형 변수 interest_rate에 4.9를 대입*/
 
+    /*정수형 자료형의 크기를 계산하는 프로그램*/
+    
+	short year = 0;
+	int sale = 0;
+	long total_sale = 0;
+
+	printf("short의 자료형 크기 : %d바이트\n", sizeof(short));
+	printf("int의 자료형 크기: %d바이트\n", sizeof(int));
+	printf("long의 자료형 크기: %d바이트\n", sizeof(int));
 
 	return 0;
 }
