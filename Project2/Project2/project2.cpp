@@ -3,9 +3,6 @@
 #include <stdio.h>
 
 
-double num4(); 
-
-
 int main()
 {
 	//이것은 주석이다.
@@ -133,13 +130,13 @@ int main()
 	//printf("내 나이는 %d입니다.\n", age);
 	//printf("나의 신장은 %f cm이다.", stature); 
 
-    /*피타고라스의 정리를 이용한 가장 긴 변의 길이를 구하는 프로그램*/
+    /*피타고라스의 정리를 이용한 가장 긴 변의 길이를 구하는 프로그램
 	int num1 = 0;
 	int num2 = 0;
-	int num3 = 0;
+	float num3 = 0;
 	double num4 = 0;
 	double num5 = 0;
-	int modify = 0;
+	float modify = 0;
 
 
 	printf("a의 길이를 입력하시오:\n");
@@ -155,10 +152,10 @@ int main()
 	printf("num2의2승은 %f이다.\n", num5);
 
 	modify = num4 + num5;                //a의2승 + b의2승 계산식
-	printf("modify값은 %d\n", modify);
+	printf("modify값은 %f\n", modify);
 
     num3 = sqrt(modify);
-	printf("루트 modify = %d\n", num3);
+	printf("루트 modify = %f\n", num3);
 	//int num3 = √(num1 ^ 2 + num2 ^ 2);
 	
 	//printf("num1 ^ 2 + num2 ^ 2 = num3 ^ 2")
@@ -166,6 +163,56 @@ int main()
 	printf("%d^2 + %d^2은 %d^2와 같다.", num1, num2, num3);
 	
 	
-	//int num3 = √(num1 ^ 2 + num2 ^ 2);
+	//int num3 = √(num1 ^ 2 + num2 ^ 2);*/
+
+
+
+    /*과자별 판매량 및 수익 프로그램*/
+
+	int 홈런볼 = 2300;
+	int 꼬깔콘 = 1700;
+	int 콘칩 = 1700;
+	int 빈츠 = 2800;
+
+	int 홈런볼판매봉지수 = 0;
+	int 꼬깔콘판매봉지수 = 0;
+	int 콘칩판매봉지수 = 0;
+	int 빈츠판매박스수 = 0;
+
+	int 일일과자총판매액 = 0;
+
+	printf("홈런볼 일일 판매 봉지수를 입력하시오 :\n");
+	scanf("%d", &홈런볼판매봉지수);
+
+	printf("꼬깔콘 일일 판매 봉지수를 입력하시오 :\n");
+	scanf("%d", &꼬깔콘판매봉지수);
+
+	printf("콘칩 일일 판매 봉지수를 입력하시오 :\n");
+	scanf("%d", &콘칩판매봉지수);
+
+	printf("빈츠 일일 판매 박스수를 입력하시오 :\n");
+	scanf("%d", &빈츠판매박스수);
+
+	printf("과자별 일일 총 판매량은 %d EA, %d EA, %d EA, %d EA이다.\n", 홈런볼판매봉지수, 꼬깔콘판매봉지수, 콘칩판매봉지수, 빈츠판매박스수);
+
+	
+
+	int 홈런볼일일판매량 = 홈런볼 * 홈런볼판매봉지수;
+	printf("홈런볼의 일일 수익액은 %d 원이다.\n", 홈런볼일일판매량);
+
+	int 꼬깔콘일일판매량 = 꼬깔콘 * 꼬깔콘판매봉지수;
+	printf("꼬깔콘의 일일 수익액은 %d 원이다.\n", 꼬깔콘일일판매량);
+
+	int 콘칩일일판매량 = 콘칩 * 콘칩판매봉지수;
+	printf("콘칩의 일일 수익액은 %d 원이다.\n", 콘칩일일판매량);
+
+	int 빈츠일일판매량 = 빈츠 * 빈츠판매박스수;
+	printf("빈츠의 일일 수익액은 %d 원이다.\n", 빈츠일일판매량);
+	
+	
+	int daysum = 홈런볼일일판매량 + 꼬깔콘일일판매량 + 콘칩일일판매량 + 빈츠일일판매량;
+	printf("과자들의 일일 총수익액은 %d 원이다.", daysum);
+
+	
 	return 0;
 }
