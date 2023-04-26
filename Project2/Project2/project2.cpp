@@ -1,5 +1,10 @@
 #define _CRT_SECURE_NO_WARNINGS
+#include <math.h>
 #include <stdio.h>
+
+
+double num4(); 
+
 
 int main()
 {
@@ -108,7 +113,7 @@ int main()
 	i = '60';  //정수형 변수 i에 60을 대입
 	interest_rate = 4.9;  //실수형 변수 interest_rate에 4.9를 대입*/
 
-    /*정수형 자료형의 크기를 계산하는 프로그램*/
+    /*정수형 자료형의 크기를 계산하는 프로그램
     
 	short year = 0;
 	int sale = 0;
@@ -116,7 +121,51 @@ int main()
 
 	printf("short의 자료형 크기 : %d바이트\n", sizeof(short));
 	printf("int의 자료형 크기: %d바이트\n", sizeof(int));
-	printf("long의 자료형 크기: %d바이트\n", sizeof(int));
+	printf("long의 자료형 크기: %d바이트\n", sizeof(int)); */
 
+    /*나의 신상 출력해보기*/
+
+	//char name = "이상백";
+	//int age = 32;
+	//float stature = 171.2;
+
+	//printf("나의 이름은 %s입니다.\n", name);
+	//printf("내 나이는 %d입니다.\n", age);
+	//printf("나의 신장은 %f cm이다.", stature); 
+
+    /*피타고라스의 정리를 이용한 가장 긴 변의 길이를 구하는 프로그램*/
+	int num1 = 0;
+	int num2 = 0;
+	int num3 = 0;
+	double num4 = 0;
+	double num5 = 0;
+	int modify = 0;
+
+
+	printf("a의 길이를 입력하시오:\n");
+	scanf("%d", &num1);
+
+	printf("b의 길이를 입력하시오:\n");
+	scanf("%d", &num2);
+
+	num4 = pow(num1, 2); //NUM1의 2승
+	printf("num1의2승은 %f이다.\n", num4);
+
+	num5 = pow(num2, 2); //NUM2의 2승
+	printf("num2의2승은 %f이다.\n", num5);
+
+	modify = num4 + num5;                //a의2승 + b의2승 계산식
+	printf("modify값은 %d\n", modify);
+
+    num3 = sqrt(modify);
+	printf("루트 modify = %d\n", num3);
+	//int num3 = √(num1 ^ 2 + num2 ^ 2);
+	
+	//printf("num1 ^ 2 + num2 ^ 2 = num3 ^ 2")
+	printf("c의 길이는 %d cm이다.", num3);
+	printf("%d^2 + %d^2은 %d^2와 같다.", num1, num2, num3);
+	
+	
+	//int num3 = √(num1 ^ 2 + num2 ^ 2);
 	return 0;
 }
