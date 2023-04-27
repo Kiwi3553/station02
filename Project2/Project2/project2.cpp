@@ -167,7 +167,7 @@ int main()
 
 
 
-    /*과자별 판매량 및 수익 프로그램*/
+    /*과자별 판매량 및 수익 프로그램
 
 	int 홈런볼 = 2300;
 	int 꼬깔콘 = 1700;
@@ -212,7 +212,23 @@ int main()
 	
 	int daysum = 홈런볼일일판매량 + 꼬깔콘일일판매량 + 콘칩일일판매량 + 빈츠일일판매량;
 	printf("과자들의 일일 총수익액은 %d 원이다.", daysum);
+	*/
 
+    /*사칙연산 프로그램*/
 	
+	int A = 7;
+	int B = 3;
+	int SUM = A + B;
+	int SUB = A - B;
+	int MUL = A * B;
+	int DIV = A / B;
+	int MOD = A % B;
+	
+	printf("%d\n", SUM);
+	printf("%d\n", SUB);
+	printf("%d\n", MUL);
+	printf("%d\n", DIV);
+	printf("%d", MOD);
+
 	return 0;
 }
