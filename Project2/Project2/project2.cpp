@@ -214,7 +214,7 @@ int main()
 	printf("과자들의 일일 총수익액은 %d 원이다.", daysum);
 	*/
 
-    /*사칙연산 프로그램*/
+    /*사칙연산 프로그램
 	
 	int A = 7;
 	int B = 3;
@@ -229,6 +229,15 @@ int main()
 	printf("%d\n", MUL);
 	printf("%d\n", DIV);
 	printf("%d", MOD);
+	*/
+
+	/*2의 보수 프로그램*/
+	int x = 3;
+	int y = -3;
+
+	printf("x = %08X\n", x); // 8자리의 16진수로 출력한다.
+	printf("y = %08X\n", y); // 8자리의 16진수로 출력한다.
+	printf("x+y = %08X\n", x + y); // 8자리의 16진수로 출력한다.
 
 	return 0;
 }
