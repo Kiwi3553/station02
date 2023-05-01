@@ -231,13 +231,22 @@ int main()
 	printf("%d", MOD);
 	*/
 
-	/*2의 보수 프로그램*/
+	/*2의 보수 프로그램
 	int x = 3;
 	int y = -3;
 
 	printf("x = %08X\n", x); // 8자리의 16진수로 출력한다.
 	printf("y = %08X\n", y); // 8자리의 16진수로 출력한다.
-	printf("x+y = %08X\n", x + y); // 8자리의 16진수로 출력한다.
+	printf("x+y = %08X\n", x + y); // 8자리의 16진수로 출력한다.*/
+
+    /*문자 변수와 문자 상수*/
+  
+	char code1 = 'A';   //문자 상수로 초기화
+	char code2 = 65;    //아스키 코드로 초기화
+
+	printf("문자 상수 초기화 = %c\n", code1);
+	printf("아스키 코드 초기화 = %c\n", code2);
+
 
 	return 0;
 }
