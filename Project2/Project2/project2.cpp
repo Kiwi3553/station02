@@ -263,12 +263,27 @@ int main()
 	printf("%d", num);
 	*/
 	
-	/*윤년 프로그램*/
+	/*윤년 프로그램
+
 	int year, result;
 	printf("연도를 입력하시오: ");
 	scanf("%d", &year);
 	result = (year % 4 == 0 && year % 100 != 0) || year % 400 == 0;
 	printf("result=%d \n", result);
+	*/
+
+	int a, b;
+	printf("첫번째 연산자=");
+	scanf("%d", &a);
+	printf("두번째 연산자=");
+	scanf("%d", &b);
+
+	printf("%d + %d 은 %d\n", a, b, a + b);
+	printf("%d - %d 은 %d\n", a, b, a - b);
+	printf("%d * %d 은 %d\n", a, b, a * b);
+	printf("%d / %d 은 %d\n", a, b, a / b);
+	printf("%d %% %d 은 %d\n", a, b, a % b);
+
 
 	return 0;
 }
