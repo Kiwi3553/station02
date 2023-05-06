@@ -306,7 +306,7 @@ int main()
 
 	*/
 
-/*If문을 사용하여 음수와 양수를 구별하는 프로그램*/
+/*If문을 사용하여 음수와 양수를 구별하는 프로그램
 
 	int number = 0;
 
@@ -321,7 +321,25 @@ int main()
 
 	if (number < 0)
 		printf("입력하신 정수는 음수입니다.");
+    
+	*/
+
+	/*If문을 사용하여 홀수와 짝수를 구별하는 프로그램*/
+
+	
+	int number;
+
+	printf("정수를 입력하시오.: \n");
+	scanf("%d", &number);
+
+	if(number%2 == 1)
+		printf("해당 값은 홀수 입니다.\n");
+
+	if(number%2 == 0)
+		printf("해당 값은 짝수 입니다.");
 
 	return 0;
+
+
 
 }
