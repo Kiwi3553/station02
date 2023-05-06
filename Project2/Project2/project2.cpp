@@ -324,7 +324,7 @@ int main()
     
 	*/
 
-	/*If문을 사용하여 홀수와 짝수를 구별하는 프로그램*/
+	/*If문을 사용하여 홀수와 짝수를 구별하는 프로그램
 
 	
 	int number;
@@ -337,6 +337,24 @@ int main()
 
 	if(number%2 == 0)
 		printf("해당 값은 짝수 입니다.");
+	*/
+
+/*If문을 사용하여 절대값을 구하는 프로그램*/
+
+int number;
+
+printf("정수를 입력하시오.:\n");
+scanf("%d", &number);
+
+if (number < 0)
+	number = -number;
+
+printf("절댓값은 %d 입니다.", number);
+
+
+
+
+
 
 	return 0;
 
