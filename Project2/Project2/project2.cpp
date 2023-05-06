@@ -272,6 +272,7 @@ int main()
 	printf("result=%d \n", result);
 	*/
 
+	/*
 	int a, b;
 	printf("첫번째 연산자=");
 	scanf("%d", &a);
@@ -283,7 +284,44 @@ int main()
 	printf("%d * %d 은 %d\n", a, b, a * b);
 	printf("%d / %d 은 %d\n", a, b, a / b);
 	printf("%d %% %d 은 %d\n", a, b, a % b);
+	*/
 
+	/*조건문 예시
+	bool istrue = true; // false
+	
+	int x = 1, y = 2, z = 0;
+
+	int num1 = 3;
+	int num2 = 5;
+
+	istrue = (num1 < num2) && (num1 == num2);
+
+	istrue = (num1 > num2) || (num1 == num2);
+
+	if (istrue)
+	{ 
+		num1 = 8;
+
+	}
+
+	*/
+
+/*If문을 사용하여 음수와 양수를 구별하는 프로그램*/
+
+	int number = 0;
+
+	printf("정수를 입력하시오 : \n");
+	scanf("%d", &number);
+
+	if(number > 0)
+		printf("입력하신 정수는 양수입니다.");
+
+	if(number == 0)
+		printf("입력하신 정수는 0입니다.");
+
+	if (number < 0)
+		printf("입력하신 정수는 음수입니다.");
 
 	return 0;
+
 }
