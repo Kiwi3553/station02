@@ -339,23 +339,40 @@ int main()
 		printf("해당 값은 짝수 입니다.");
 	*/
 
-/*If문을 사용하여 절대값을 구하는 프로그램*/
+/*If문을 사용하여 절대값을 구하는 프로그램
 
-int number;
+	int number;
 
-printf("정수를 입력하시오.:\n");
-scanf("%d", &number);
+	printf("정수를 입력하시오.:\n");
+	scanf("%d", &number);
 
-if (number < 0)
-	number = -number;
+	if (number < 0)
+		{
+			number = -number;
 
-printf("절댓값은 %d 입니다.", number);
+			printf("절댓값은 %d 입니다.", number);
+		}
+	*/
+
+/*IF else문을 이용한 성적 입력 프로그램*/
+
+	int score;
+
+	printf("성적을 입력하세요: \n");
+	scanf("%d", &score);
 
 
-
-
-
-
+	if(score >= 60)
+	{ 
+		printf("합격입니다!\n");
+		printf("고생하셨습니다!\n");
+	}
+	else
+	{ 
+		printf("불합격입니다.\n");
+		printf("공부하세요!");
+	}
+	
 	return 0;
 
 
