@@ -387,7 +387,7 @@ int main()
 	printf("%d년은 윤년이 아닙니다.\n", year);
 	*/
 
-	/*정수 3개 중의 최솟값 찾기*/
+	/*정수 3개 중의 최솟값 찾기
 	
 	int num1;
 	int num2;
@@ -412,8 +412,26 @@ int main()
 			min = num3;
 	}
 	printf("제일 작은 수는 %d입니다.", min);
+	*/
 
+/*성적 분류 프로그램*/
 
+int score;
+
+printf("점수를 입력하시오.:\n");
+scanf("%d", &score);
+
+if (score >= 90)
+	printf("합격: 학점 A.\n");
+else if (score >= 80)
+	printf("합격: 학점 B.\n");
+else if (score >= 70)
+	printf("합격: 학점 c.\n");
+else if (score >= 60)
+	printf("합격: 학점 D.");
+
+else
+	printf("불합격자입니다.");
 
 	return 0;
 
