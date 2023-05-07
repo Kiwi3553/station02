@@ -414,7 +414,7 @@ int main()
 	printf("제일 작은 수는 %d입니다.", min);
 	*/
 
-/*성적 분류 프로그램*/
+/*학점 분류 프로그램
 
 int score;
 
@@ -432,8 +432,32 @@ else if (score >= 60)
 
 else
 	printf("불합격자입니다.");
+*/
 
-	return 0;
+/*간단한 산술 계산기 프로그램*/
+
+char op;
+int x, y;
+
+printf("수식을 입력하시오:\n");
+scanf("%d %c %d", &x,&op, &y);
+
+if (op == '+')
+printf("%d %c %d = %d", x, op, y, x + y);
+else if (op == '-')
+printf("%d %c %d = %d", x, op, y, x - y);
+else if (op == '*')
+printf("%d %c %d = %d", x, op, y, x * y);
+else if (op == '/')
+printf("%d %c %d = %d", x, op, y, x / y);
+else if (op == '%')
+printf("%d %c %d = %d", x, op, y, x % y);
+
+else
+printf("지정되지않은 연산자입니다.");
+	
+
+return 0;
 
 
 
