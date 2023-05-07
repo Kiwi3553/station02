@@ -374,7 +374,7 @@ int main()
 	}
 	*/
 
-	/*윤년 판단 프로그램*/
+	/*윤년 판단 프로그램
 
 	int year;
 
@@ -385,8 +385,33 @@ int main()
 	printf("%d년은 윤년입니다.\n", year);
 	else
 	printf("%d년은 윤년이 아닙니다.\n", year);
+	*/
 
+	/*정수 3개 중의 최솟값 찾기*/
+	
+	int num1;
+	int num2;
+	int num3;
+	int min;
 
+	printf("정수 3개를 입력하시오: \n");
+	scanf("%d %d %d", &num1, &num2, &num3);
+
+	if(num1 < num2)
+	{
+		if (num1 < num3)
+			min = num1;
+		else
+			min = num3;
+	}
+	else
+	{
+		if (num2 < num3)
+			min = num2;
+		else
+			min = num3;
+	}
+	printf("제일 작은 수는 %d입니다.", min);
 
 
 
