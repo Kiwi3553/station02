@@ -457,7 +457,7 @@ else
 printf("지정되지않은 연산자입니다.");
 */
 
-/*switch문*/
+/*switch문
 
 int number;
 
@@ -473,14 +473,41 @@ switch(number)
 		printf("하나\n");
 		break;
 	case 2:
-		printf("둘\n");
+	case 3:
+		printf("두서너개\n");
 		break;
 	
 default:
 	printf("많음");
 	break;
-}
+}*/
 
+/*달의일수를 알 수 있는 프로그램*/
+
+int month, days;
+
+printf("일수를 알고싶은 달을 입력하시오.");
+scanf("%d", &month);
+
+switch(month)
+{
+	case 2:
+		days = 28;
+		break;
+	case 4:
+	case 6:
+	case 9:
+	case 11:
+		days = 30;
+		break;
+
+	default:
+		days = 31;
+		break;
+
+	
+}
+printf("%d의일수는 %d입니다.", month, days);
 
 return 0;
 
