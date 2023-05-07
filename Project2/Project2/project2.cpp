@@ -434,7 +434,7 @@ else
 	printf("불합격자입니다.");
 */
 
-/*간단한 산술 계산기 프로그램*/
+/*간단한 산술 계산기 프로그램
 
 char op;
 int x, y;
@@ -455,7 +455,32 @@ printf("%d %c %d = %d", x, op, y, x % y);
 
 else
 printf("지정되지않은 연산자입니다.");
+*/
+
+/*switch문*/
+
+int number;
+
+printf("정수를 입력하시오.");
+scanf("%d", &number);
+
+switch(number)
+{	
+	case 0:
+		printf("없음\n");
+		break;
+	case 1:
+		printf("하나\n");
+		break;
+	case 2:
+		printf("둘\n");
+		break;
 	
+default:
+	printf("많음");
+	break;
+}
+
 
 return 0;
 
