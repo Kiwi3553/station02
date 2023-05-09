@@ -1,5 +1,4 @@
 #define _CRT_SECURE_NO_WARNINGS
-#include <math.h>
 #include <stdio.h>
 
 
@@ -482,7 +481,7 @@ default:
 	break;
 }*/
 
-/*달의일수를 알 수 있는 프로그램*/
+/*달의일수를 알 수 있는 프로그램
 
 int month, days;
 
@@ -508,6 +507,42 @@ switch(month)
 	
 }
 printf("%d의일수는 %d입니다.", month, days);
+*/
+
+/*계산기 만들기2*/
+
+int num1;
+int num2;
+char operation;
+
+printf("첫번째 숫자를 입력하세요 :\n");
+scanf("%d", &num1);
+
+printf("원하시는 연산자를 입력하시오 :\n");
+scanf(" %c", &operation);
+
+printf("두번째 숫자를 입력하세요 :\n");
+scanf("%d", &num2);
+
+if (num1 + num2)
+printf("%d %c %d = %d", num1, operation, num2, num1+num2);
+{
+else if (num1 - num2)
+printf("%d %c %d = %d", num1, operation, num2, num1 - num2);
+
+else if (num1 * num2)
+printf("%d %c %d = %d", num1, operation, num2, num1 * num2);
+
+else if (num1 / num2)
+printf("%d %c %d = %d", num1, operation, num2, num1 / num2);
+
+else if (num1 % num2)
+printf("%d %c %d = %d", num1, operation, num2, num1 % num2);
+
+}
+else
+printf("지정되지 않은 연산자입니다.");
+
 
 return 0;
 
