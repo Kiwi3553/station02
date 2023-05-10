@@ -509,7 +509,7 @@ switch(month)
 printf("%d의일수는 %d입니다.", month, days);
 */
 
-/*계산기 만들기2*/
+/*사칙연산 계산기 만들기2
 
 int num1;
 int num2;
@@ -524,24 +524,39 @@ scanf(" %c", &operation);
 printf("두번째 숫자를 입력하세요 :\n");
 scanf("%d", &num2);
 
-if (num1 + num2)
-printf("%d %c %d = %d", num1, operation, num2, num1+num2);
-{
-else if (num1 - num2)
-printf("%d %c %d = %d", num1, operation, num2, num1 - num2);
+if (operation == '+')
+	printf("%d %c %d = %d \n", num1, operation, num2, num1+num2);
 
-else if (num1 * num2)
-printf("%d %c %d = %d", num1, operation, num2, num1 * num2);
+else if (operation == '-')
+	printf("%d %c %d = %d \n", num1, operation, num2, num1-num2);
 
-else if (num1 / num2)
-printf("%d %c %d = %d", num1, operation, num2, num1 / num2);
+else if (operation == '*')
+	printf("%d %c %d = %d \n", num1, operation, num2, num1*num2);
 
-else if (num1 % num2)
-printf("%d %c %d = %d", num1, operation, num2, num1 % num2);
+else if (operation == '/')
+	printf("%d %c %d = %d \n", num1, operation, num2, num1/num2);
 
-}
+else if (operation == '%')
+	printf("%d %c %d = %d \n", num1, operation, num2, num1%num2);
 else
-printf("지정되지 않은 연산자입니다.");
+	printf("지정되지 않은 연산자입니다.");
+
+*/
+
+/*문자들을 분류하는 프로그램*/
+char ch;
+
+printf("문자를 입력하시오: ");
+scanf("%c", &ch);
+
+if (ch >= 'A' && ch <= 'Z')
+	printf("%c는 대문자입니다.\n", ch);
+else if (ch >= 'a' && ch <= 'z')
+	printf("%c는 소문자입니다.\n", ch);
+else if (ch >= '0' && ch <= '9')
+	printf("%c는 숫자입니다.\n", ch);
+else
+	printf("%c는 기타문자입니다.\n", ch);
 
 
 return 0;

@@ -1,3 +1,1 @@
-﻿  project2.cpp
-C:\Users\user\Desktop\직면\2023 취업준비\C++\강의용\station02\Project2\Project2\project2.cpp(530,1): error C2181: if와 짝을 이루지 않는 잘못된 else문입니다.
-C:\Users\user\Desktop\직면\2023 취업준비\C++\강의용\station02\Project2\Project2\project2.cpp(543,1): error C2181: if와 짝을 이루지 않는 잘못된 else문입니다.
+﻿LINK : fatal error LNK1168: C:\Users\user\Desktop\직면\2023 취업준비\C++\강의용\station02\Project2\x64\Debug\Project2.exe을(를) 쓰기용으로 열 수 없습니다.
