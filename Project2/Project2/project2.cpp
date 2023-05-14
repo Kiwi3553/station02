@@ -543,7 +543,7 @@ else
 
 */
 
-/*문자들을 분류하는 프로그램*/
+/*문자들을 분류하는 프로그램
 char ch;
 
 printf("문자를 입력하시오: ");
@@ -558,6 +558,45 @@ else if (ch >= '0' && ch <= '9')
 else
 	printf("%c는 기타문자입니다.\n", ch);
 
+*/
+
+/*사칙연산 계산기:switch버전*/
+
+int x;
+int y;
+char op;
+
+printf("수식을 입력하시오:\n");
+scanf("%d %c %d", &x, &op, &y);
+
+switch (op)
+{
+	case '+':
+		printf("%d %c %d = %d\n", x, op, y, x + y);
+	break;
+
+	case '-':
+		printf("%d %c %d = %d\n", x, op, y, x - y);
+	break;
+
+	case '*':
+		printf("%d %c %d = %d\n", x, op, y, x * y);
+	break;
+
+	case '/':
+		printf("%d %c %d = %d\n", x, op, y, x / y);
+	break;
+
+	case '%':
+		printf("%d %c %d = %d\n", x, op, y, x % y);
+	break;
+
+	default:
+		printf("지원되지 않는 연산자입니다.\n");
+		break;
+
+
+}
 
 return 0;
 
