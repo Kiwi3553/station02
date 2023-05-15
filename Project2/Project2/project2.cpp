@@ -599,7 +599,7 @@ switch (op)
 }
 */
 
-/*마일을 미터로 바꾸는 프로그램*/
+/*마일을 미터로 바꾸는 프로그램
 {
 	int meter;
 
@@ -612,7 +612,22 @@ switch (op)
 	meter = 2 * 1609;
 	printf("2마일은 %d미터입니다.\n", meter);
 }
+*/
 
+/*while을 이용한 마일을 미터로 바꾸는 프로그램
+{
+	int meter;
+	int i = 0;
+
+	while (i < 3)
+	{
+		meter = i * 1609;
+		printf("이 %d마일은 %d미터입니다.\n", i, meter);
+		i++;
+	}
+
+}
+*/
 
 
 
