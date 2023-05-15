@@ -629,10 +629,46 @@ switch (op)
 }
 */
 
+/*while 문을 이용한 구구단 출력 프로그램
+int n;
+int i = 1;
 
+printf("출력하고싶은 단을 입력하시오\n");
+scanf("%d", &n);
 
+while(i <= 9)
+{
+	printf("%d * %d = %d \n", n, i, n*i);
+	i++;
 
+}
+*/
 
+/*for문을 이용한 구구단 출력 프로그램(세로)
+
+for(int i = 1;i<10; i++)
+{
+	for(int j = 1;j<=10; i++)
+	{
+		printf("%d * %d = %d \n", i, j, (i * j));
+	}
+	printf("\n");
+}
+*/
+
+/*while 문을 이용한 제곱값 출력 프로그램*/
+	int n;
+
+	printf("============================\n");
+	printf("  n      n의 제곱 \n");
+	printf("============================\n");
+
+	n = 1;
+	while (n <= 10)
+	{
+		printf("%3d  %5d\n", n, n * n);
+		n++;
+	}
 
 
 
