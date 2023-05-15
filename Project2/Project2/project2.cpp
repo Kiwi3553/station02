@@ -504,7 +504,7 @@ switch(month)
 		days = 31;
 		break;
 
-	
+
 }
 printf("%d의일수는 %d입니다.", month, days);
 */
@@ -560,7 +560,7 @@ else
 
 */
 
-/*사칙연산 계산기:switch버전*/
+/*사칙연산 계산기:switch버전
 
 int x;
 int y;
@@ -597,6 +597,29 @@ switch (op)
 
 
 }
+*/
+
+/*마일을 미터로 바꾸는 프로그램*/
+{
+	int meter;
+
+	meter = 0 * 1609;
+	printf("0마일은 %d미터입니다.\n", meter);
+
+	meter = 1 * 1609;
+	printf("1마일은 %d미터입니다.\n", meter);
+
+	meter = 2 * 1609;
+	printf("2마일은 %d미터입니다.\n", meter);
+}
+
+
+
+
+
+
+
+
 
 return 0;
 
