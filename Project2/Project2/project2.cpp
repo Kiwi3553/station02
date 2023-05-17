@@ -648,13 +648,14 @@ while(i <= 9)
 
 for(int i = 1;i<10; i++)
 {
-	for(int j = 1;j<=10; i++)
+	for(int j = 1;j<=10; j++)
 	{
 		printf("%d * %d = %d \n", i, j, (i * j));
 	}
 	printf("\n");
 }
 */
+
 
 /*while 문을 이용한 제곱값 출력 프로그램
 	int n;
@@ -670,6 +671,9 @@ for(int i = 1;i<10; i++)
 		n++;
 	}
 */
+
+
+
 
 /* 임의의 정수의 범위까지 합을 구하는 프로그램
 
@@ -690,7 +694,7 @@ while (i <= n)
 printf("1부터 %d까지의 합은 %d입니다 \n", n, sum);
 */
 
-/*나눗셈을 하기 전에 분모가 0인지를 if-els 문을 이용하기 */
+/*나눗셈을 하기 전에 분모가 0인지를 if-els 문을 이용하기 
 
 int n1, n2, n3;
 
@@ -708,6 +712,26 @@ if (n2 == 0)
 else
 	n3 = n1 / n2;
 		printf("결과는 %d입니다.", n3);
+
+*/
+
+
+
+/* while 문을 이용한 합계 프로그램 */
+
+int n;
+int i = 0;
+int sum = 0;
+
+while(i < 5)
+{
+	printf("값을 입력하시오 : \n");
+	scanf("%d", &n);
+
+	sum = sum + n;
+	i++;
+}
+printf("합계는 %d입니다.\n", sum);
 
 return 0;
 
