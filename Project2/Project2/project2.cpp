@@ -1,5 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
+#include <math.h>
 
 
 int main()
@@ -717,7 +718,7 @@ else
 
 
 
-/* while 문을 이용한 합계 프로그램 */
+/* while 문을 이용한 합계 프로그램 
 
 int n;
 int i = 0;
@@ -732,6 +733,39 @@ while(i < 5)
 	i++;
 }
 printf("합계는 %d입니다.\n", sum);
+
+*/
+
+/* 성적을 입력받아서 합계를 구하고 학생 수를 센다.  */
+
+int s ;
+float sum ;
+float average ;
+int i ;
+
+s = 0;
+sum = 0;
+average = 0;
+i = 0;
+
+printf("성적 입력을 종료하려면 음수를 입력하시오\n");
+
+
+while (s >= 0)
+{
+	printf("성적을 입력하시오: \n");
+	scanf("%d", &s);
+	sum += s;
+	i++;
+
+}
+	sum = sum - s;
+	i--;
+	
+	average = sum / i;
+	printf("성적의 평균은 %f입니다.", average);
+
+
 
 return 0;
 
