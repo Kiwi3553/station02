@@ -1,2 +1,2 @@
 ﻿  project2.cpp
-  Project2.vcxproj -> C:\Users\user\Desktop\직면\2023 취업준비\C++\강의용\station02\Project2\x64\Debug\Project2.exe
+C:\Users\user\Desktop\직면\2023 취업준비\C++\강의용\station02\Project2\Project2\project2.cpp(811,2): error C2146: 구문 오류: ';'이(가) 'printf' 식별자 앞에 없습니다.

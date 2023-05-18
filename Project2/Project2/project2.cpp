@@ -767,7 +767,7 @@ while (s >= 0)
 
 */
 
-/* while문을 이용한 최대 공약수 구하기 프로그램*/
+/* while문을 이용한 최대 공약수 구하기 프로그램
 int x;
 int y;
 int r;
@@ -788,6 +788,31 @@ while (y != 0)
 }
 
 printf("최대공약수는 %d와 같습니다.\n", x);
+*/
+
+/*do while 문을 이용한 메뉴*/
+
+int x;
+x = 0;
+
+do
+{
+	printf("1-----새로 만들기\n");
+	printf("2-----파일 열기\n");
+	printf("3-----파일 닫기\n");
+
+	printf("버튼넘버를 입력하시오:");
+	scanf("%d", &x);
+
+}
+
+
+while (x < 1 || 3 < x)
+	printf("유효하지않은 버튼입니다.다시 입력해주세요");
+	scanf("%d", &x);
+
+	printf("선택된 메뉴 = %d \n", x);
+
 return 0;
 
 
