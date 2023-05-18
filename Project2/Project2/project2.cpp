@@ -790,7 +790,7 @@ while (y != 0)
 printf("최대공약수는 %d와 같습니다.\n", x);
 */
 
-/*do while 문을 이용한 메뉴*/
+/*do while 문을 이용한 메뉴
 
 int x;
 x = 0;
@@ -812,6 +812,19 @@ while (x < 1 || 3 < x)
 	scanf("%d", &x);
 
 	printf("선택된 메뉴 = %d \n", x);
+*/
+
+/*반복을 이용한 정수합 프로그램*/
+int sum = 0;
+int i;
+
+for (i = 1; i <= 10 ; i++)
+{
+	sum = sum + i;
+}
+printf("1부터 10까지의 정수합은 %d입니다.", sum);
+
+
 
 return 0;
 
