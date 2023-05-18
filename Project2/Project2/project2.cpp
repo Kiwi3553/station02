@@ -881,7 +881,7 @@ int main()
 				}
 				*/
 
-/*임의의 학생의 5번 친 시험 성적의 평균을 구하기*/
+/*임의의 학생의 5번 친 시험 성적의 평균을 구하기
 
 int s, t;
 float score, total, average;
@@ -898,6 +898,21 @@ for (s = 0; s < 20; s++)
 	}
 	average = total / 5.0;
 	printf("%d번 학생의 성적 평균: %f\n", s + 1, average);
+}
+*/
+
+/*break을 이용하여 실수의 제곱근을 출력하는 무한루프 탈출하기*/
+
+double v;
+
+while (1)
+{
+	printf("실수값을 입력하시오");
+	scanf("%lf", &v);
+
+	if (v < 0)
+		break;
+	printf("%lf의 제곱근은 %lf입니다.\n", v, sqrt(v));
 }
 return 0;
 
