@@ -2,6 +2,9 @@
 #include <stdio.h>
 #include <math.h>
 
+#define RATE 0.07         // 이율
+#define INVESTMENT 10000000    //초기 투자금
+#define YEARS     10      // 투자 기간
 
 int main()
 {
@@ -936,7 +939,7 @@ printf("학생들의 성적의 평균은 %f입니다.\n", average);
 */
 
 
-/* 소문자를 대문자로 변경하는 프로그램에 continue 써보기*/
+/* 소문자를 대문자로 변경하는 프로그램에 continue 써보기
 
 char letter;
 
@@ -952,6 +955,22 @@ while(1)
 
 	letter -= 32; //아스키코드 대문자 소문자차가 32
 	printf("변환된 대문자는 %c입니다.\n",  letter);
+}
+*/
+
+/* 복리이자계산 */
+
+int i;
+double total = INVESTMENT; //원리금 합계
+
+printf("=============\n");
+printf("연도 원리금\n");
+printf("=============\n");
+
+for (i = 1; i <= YEARS; i++)
+{
+	total = total * (1 + RATE);     // 새로운 원리금 계산
+	printf("%2d %10.1f\n", i, total);
 }
 
 return 0;
