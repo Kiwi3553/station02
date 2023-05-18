@@ -8,7 +8,7 @@ int main()
 	//이것은 주석이다.
 	/*이것도 주석이다.*/
 	//이렇게 메인 함수에 여러 함수와 변수를 넣으면된다
-	
+
 	//변수(변하는 수)
 
 	//int flyheight = 0;
@@ -88,7 +88,7 @@ int main()
 
 	printf("원화 %d원은 %f달러 입니다.\n", krw, usd);*/
 
-	
+
 	/*원의 면적을 계산하는 프로그램
 
 	float radius;       //원의 반지름
@@ -110,8 +110,8 @@ int main()
 	i = '60';  //정수형 변수 i에 60을 대입
 	interest_rate = 4.9;  //실수형 변수 interest_rate에 4.9를 대입*/
 
-    /*정수형 자료형의 크기를 계산하는 프로그램
-    
+	/*정수형 자료형의 크기를 계산하는 프로그램
+
 	short year = 0;
 	int sale = 0;
 	long total_sale = 0;
@@ -120,7 +120,7 @@ int main()
 	printf("int의 자료형 크기: %d바이트\n", sizeof(int));
 	printf("long의 자료형 크기: %d바이트\n", sizeof(int)); */
 
-    /*나의 신상 출력해보기*/
+	/*나의 신상 출력해보기*/
 
 	//char name = "이상백";
 	//int age = 32;
@@ -130,7 +130,7 @@ int main()
 	//printf("내 나이는 %d입니다.\n", age);
 	//printf("나의 신장은 %f cm이다.", stature); 
 
-    /*피타고라스의 정리를 이용한 가장 긴 변의 길이를 구하는 프로그램
+	/*피타고라스의 정리를 이용한 가장 긴 변의 길이를 구하는 프로그램
 	int num1 = 0;
 	int num2 = 0;
 	float num3 = 0;
@@ -154,20 +154,20 @@ int main()
 	modify = num4 + num5;                //a의2승 + b의2승 계산식
 	printf("modify값은 %f\n", modify);
 
-    num3 = sqrt(modify);
+	num3 = sqrt(modify);
 	printf("루트 modify = %f\n", num3);
 	//int num3 = √(num1 ^ 2 + num2 ^ 2);
-	
+
 	//printf("num1 ^ 2 + num2 ^ 2 = num3 ^ 2")
 	printf("c의 길이는 %d cm이다.", num3);
 	printf("%d^2 + %d^2은 %d^2와 같다.", num1, num2, num3);
-	
-	
+
+
 	//int num3 = √(num1 ^ 2 + num2 ^ 2);*/
 
 
 
-    /*과자별 판매량 및 수익 프로그램
+	/*과자별 판매량 및 수익 프로그램
 
 	int 홈런볼 = 2300;
 	int 꼬깔콘 = 1700;
@@ -195,7 +195,7 @@ int main()
 
 	printf("과자별 일일 총 판매량은 %d EA, %d EA, %d EA, %d EA이다.\n", 홈런볼판매봉지수, 꼬깔콘판매봉지수, 콘칩판매봉지수, 빈츠판매박스수);
 
-	
+
 
 	int 홈런볼일일판매량 = 홈런볼 * 홈런볼판매봉지수;
 	printf("홈런볼의 일일 수익액은 %d 원이다.\n", 홈런볼일일판매량);
@@ -208,14 +208,14 @@ int main()
 
 	int 빈츠일일판매량 = 빈츠 * 빈츠판매박스수;
 	printf("빈츠의 일일 수익액은 %d 원이다.\n", 빈츠일일판매량);
-	
-	
+
+
 	int daysum = 홈런볼일일판매량 + 꼬깔콘일일판매량 + 콘칩일일판매량 + 빈츠일일판매량;
 	printf("과자들의 일일 총수익액은 %d 원이다.", daysum);
 	*/
 
-    /*사칙연산 프로그램
-	
+	/*사칙연산 프로그램
+
 	int A = 7;
 	int B = 3;
 	int SUM = A + B;
@@ -223,7 +223,7 @@ int main()
 	int MUL = A * B;
 	int DIV = A / B;
 	int MOD = A % B;
-	
+
 	printf("%d\n", SUM);
 	printf("%d\n", SUB);
 	printf("%d\n", MUL);
@@ -239,8 +239,8 @@ int main()
 	printf("y = %08X\n", y); // 8자리의 16진수로 출력한다.
 	printf("x+y = %08X\n", x + y); // 8자리의 16진수로 출력한다.*/
 
-    /*문자 변수와 문자 상수
-  
+	/*문자 변수와 문자 상수
+
 	char code1 = 'A';   //문자 상수로 초기화
 	char code2 = 65;    //아스키 코드로 초기화
 
@@ -252,7 +252,7 @@ int main()
 	printf("이스케이프 시퀀스는 \\와 의미를 나타내는 글자를 붙여서 기술\n");
 	printf("'\\a'는 경고를 나타내는 제어문자이다.\n");
 	printf("'\\007'로도 표현이 가능하다.\n");
-	printf("경고를 출력해보자'\\007'을 출력한다 \007 \n"); 
+	printf("경고를 출력해보자'\\007'을 출력한다 \007 \n");
 	*/
 
 	/*연산자 실습
@@ -262,7 +262,7 @@ int main()
 
 	printf("%d", num);
 	*/
-	
+
 	/*윤년 프로그램
 
 	int year, result;
@@ -288,7 +288,7 @@ int main()
 
 	/*조건문 예시
 	bool istrue = true; // false
-	
+
 	int x = 1, y = 2, z = 0;
 
 	int num1 = 3;
@@ -299,567 +299,606 @@ int main()
 	istrue = (num1 > num2) || (num1 == num2);
 
 	if (istrue)
-	{ 
+	{
 		num1 = 8;
 
 	}
 
 	*/
 
-/*If문을 사용하여 음수와 양수를 구별하는 프로그램
+	/*If문을 사용하여 음수와 양수를 구별하는 프로그램
 
-	int number = 0;
+		int number = 0;
 
-	printf("정수를 입력하시오 : \n");
-	scanf("%d", &number);
+		printf("정수를 입력하시오 : \n");
+		scanf("%d", &number);
 
-	if(number > 0)
-		printf("입력하신 정수는 양수입니다.");
+		if(number > 0)
+			printf("입력하신 정수는 양수입니다.");
 
-	if(number == 0)
-		printf("입력하신 정수는 0입니다.");
+		if(number == 0)
+			printf("입력하신 정수는 0입니다.");
 
-	if (number < 0)
-		printf("입력하신 정수는 음수입니다.");
-    
-	*/
+		if (number < 0)
+			printf("입력하신 정수는 음수입니다.");
 
-	/*If문을 사용하여 홀수와 짝수를 구별하는 프로그램
+		*/
 
-	
-	int number;
+		/*If문을 사용하여 홀수와 짝수를 구별하는 프로그램
 
-	printf("정수를 입력하시오.: \n");
-	scanf("%d", &number);
 
-	if(number%2 == 1)
-		printf("해당 값은 홀수 입니다.\n");
+		int number;
 
-	if(number%2 == 0)
-		printf("해당 값은 짝수 입니다.");
-	*/
+		printf("정수를 입력하시오.: \n");
+		scanf("%d", &number);
 
-/*If문을 사용하여 절대값을 구하는 프로그램
+		if(number%2 == 1)
+			printf("해당 값은 홀수 입니다.\n");
 
-	int number;
+		if(number%2 == 0)
+			printf("해당 값은 짝수 입니다.");
+		*/
 
-	printf("정수를 입력하시오.:\n");
-	scanf("%d", &number);
+		/*If문을 사용하여 절대값을 구하는 프로그램
 
-	if (number < 0)
-		{
-			number = -number;
+			int number;
 
-			printf("절댓값은 %d 입니다.", number);
-		}
-	*/
+			printf("정수를 입력하시오.:\n");
+			scanf("%d", &number);
 
-/*IF else문을 이용한 성적 입력 프로그램
-
-	int score;
+			if (number < 0)
+				{
+					number = -number;
 
-	printf("성적을 입력하세요: \n");
-	scanf("%d", &score);
+					printf("절댓값은 %d 입니다.", number);
+				}
+			*/
 
+			/*IF else문을 이용한 성적 입력 프로그램
 
-	if(score >= 60)
-	{ 
-		printf("합격입니다!\n");
-		printf("고생하셨습니다!\n");
-	}
-	else
-	{ 
-		printf("불합격입니다.\n");
-		printf("공부하세요!");
-	}
-	*/
-
-	/*윤년 판단 프로그램
-
-	int year;
-
-	printf("연도를 입력하시오: ");
-	scanf("%d", &year);
-
-	if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)
-	printf("%d년은 윤년입니다.\n", year);
-	else
-	printf("%d년은 윤년이 아닙니다.\n", year);
-	*/
-
-	/*정수 3개 중의 최솟값 찾기
-	
-	int num1;
-	int num2;
-	int num3;
-	int min;
-
-	printf("정수 3개를 입력하시오: \n");
-	scanf("%d %d %d", &num1, &num2, &num3);
-
-	if(num1 < num2)
-	{
-		if (num1 < num3)
-			min = num1;
-		else
-			min = num3;
-	}
-	else
-	{
-		if (num2 < num3)
-			min = num2;
-		else
-			min = num3;
-	}
-	printf("제일 작은 수는 %d입니다.", min);
-	*/
-
-/*학점 분류 프로그램
-
-int score;
-
-printf("점수를 입력하시오.:\n");
-scanf("%d", &score);
-
-if (score >= 90)
-	printf("합격: 학점 A.\n");
-else if (score >= 80)
-	printf("합격: 학점 B.\n");
-else if (score >= 70)
-	printf("합격: 학점 c.\n");
-else if (score >= 60)
-	printf("합격: 학점 D.");
-
-else
-	printf("불합격자입니다.");
-*/
-
-/*간단한 산술 계산기 프로그램
-
-char op;
-int x, y;
-
-printf("수식을 입력하시오:\n");
-scanf("%d %c %d", &x,&op, &y);
-
-if (op == '+')
-printf("%d %c %d = %d", x, op, y, x + y);
-else if (op == '-')
-printf("%d %c %d = %d", x, op, y, x - y);
-else if (op == '*')
-printf("%d %c %d = %d", x, op, y, x * y);
-else if (op == '/')
-printf("%d %c %d = %d", x, op, y, x / y);
-else if (op == '%')
-printf("%d %c %d = %d", x, op, y, x % y);
-
-else
-printf("지정되지않은 연산자입니다.");
-*/
-
-/*switch문
-
-int number;
-
-printf("정수를 입력하시오.");
-scanf("%d", &number);
-
-switch(number)
-{	
-	case 0:
-		printf("없음\n");
-		break;
-	case 1:
-		printf("하나\n");
-		break;
-	case 2:
-	case 3:
-		printf("두서너개\n");
-		break;
-	
-default:
-	printf("많음");
-	break;
-}*/
-
-/*달의일수를 알 수 있는 프로그램
-
-int month, days;
-
-printf("일수를 알고싶은 달을 입력하시오.");
-scanf("%d", &month);
-
-switch(month)
-{
-	case 2:
-		days = 28;
-		break;
-	case 4:
-	case 6:
-	case 9:
-	case 11:
-		days = 30;
-		break;
-
-	default:
-		days = 31;
-		break;
-
-
-}
-printf("%d의일수는 %d입니다.", month, days);
-*/
-
-/*사칙연산 계산기 만들기2
-
-int num1;
-int num2;
-char operation;
-
-printf("첫번째 숫자를 입력하세요 :\n");
-scanf("%d", &num1);
-
-printf("원하시는 연산자를 입력하시오 :\n");
-scanf(" %c", &operation);
-
-printf("두번째 숫자를 입력하세요 :\n");
-scanf("%d", &num2);
-
-if (operation == '+')
-	printf("%d %c %d = %d \n", num1, operation, num2, num1+num2);
-
-else if (operation == '-')
-	printf("%d %c %d = %d \n", num1, operation, num2, num1-num2);
-
-else if (operation == '*')
-	printf("%d %c %d = %d \n", num1, operation, num2, num1*num2);
-
-else if (operation == '/')
-	printf("%d %c %d = %d \n", num1, operation, num2, num1/num2);
-
-else if (operation == '%')
-	printf("%d %c %d = %d \n", num1, operation, num2, num1%num2);
-else
-	printf("지정되지 않은 연산자입니다.");
-
-*/
-
-/*문자들을 분류하는 프로그램
-char ch;
-
-printf("문자를 입력하시오: ");
-scanf("%c", &ch);
-
-if (ch >= 'A' && ch <= 'Z')
-	printf("%c는 대문자입니다.\n", ch);
-else if (ch >= 'a' && ch <= 'z')
-	printf("%c는 소문자입니다.\n", ch);
-else if (ch >= '0' && ch <= '9')
-	printf("%c는 숫자입니다.\n", ch);
-else
-	printf("%c는 기타문자입니다.\n", ch);
-
-*/
-
-/*사칙연산 계산기:switch버전
-
-int x;
-int y;
-char op;
-
-printf("수식을 입력하시오:\n");
-scanf("%d %c %d", &x, &op, &y);
-
-switch (op)
-{
-	case '+':
-		printf("%d %c %d = %d\n", x, op, y, x + y);
-	break;
-
-	case '-':
-		printf("%d %c %d = %d\n", x, op, y, x - y);
-	break;
+				int score;
 
-	case '*':
-		printf("%d %c %d = %d\n", x, op, y, x * y);
-	break;
+				printf("성적을 입력하세요: \n");
+				scanf("%d", &score);
 
-	case '/':
-		printf("%d %c %d = %d\n", x, op, y, x / y);
-	break;
 
-	case '%':
-		printf("%d %c %d = %d\n", x, op, y, x % y);
-	break;
+				if(score >= 60)
+				{
+					printf("합격입니다!\n");
+					printf("고생하셨습니다!\n");
+				}
+				else
+				{
+					printf("불합격입니다.\n");
+					printf("공부하세요!");
+				}
+				*/
+ /*윤년 판단 프로그램
 
-	default:
-		printf("지원되지 않는 연산자입니다.\n");
-		break;
+				int year;
 
+				printf("연도를 입력하시오: ");
+				scanf("%d", &year);
 
-}
-*/
+				if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)
+				printf("%d년은 윤년입니다.\n", year);
+				else
+				printf("%d년은 윤년이 아닙니다.\n", year);
+				*/
 
-/*마일을 미터로 바꾸는 프로그램
-{
-	int meter;
+				/*정수 3개 중의 최솟값 찾기
 
-	meter = 0 * 1609;
-	printf("0마일은 %d미터입니다.\n", meter);
+				int num1;
+				int num2;
+				int num3;
+				int min;
 
-	meter = 1 * 1609;
-	printf("1마일은 %d미터입니다.\n", meter);
+				printf("정수 3개를 입력하시오: \n");
+				scanf("%d %d %d", &num1, &num2, &num3);
 
-	meter = 2 * 1609;
-	printf("2마일은 %d미터입니다.\n", meter);
-}
-*/
+				if(num1 < num2)
+				{
+					if (num1 < num3)
+						min = num1;
+					else
+						min = num3;
+				}
+				else
+				{
+					if (num2 < num3)
+						min = num2;
+					else
+						min = num3;
+				}
+				printf("제일 작은 수는 %d입니다.", min);
+				*/
+
+				/*학점 분류 프로그램
+
+				int score;
+
+				printf("점수를 입력하시오.:\n");
+				scanf("%d", &score);
+
+				if (score >= 90)
+					printf("합격: 학점 A.\n");
+				else if (score >= 80)
+					printf("합격: 학점 B.\n");
+				else if (score >= 70)
+					printf("합격: 학점 c.\n");
+				else if (score >= 60)
+					printf("합격: 학점 D.");
+
+				else
+					printf("불합격자입니다.");
+				*/
+
+				/*간단한 산술 계산기 프로그램
+
+				char op;
+				int x, y;
+
+				printf("수식을 입력하시오:\n");
+				scanf("%d %c %d", &x,&op, &y);
+
+				if (op == '+')
+				printf("%d %c %d = %d", x, op, y, x + y);
+				else if (op == '-')
+				printf("%d %c %d = %d", x, op, y, x - y);
+				else if (op == '*')
+				printf("%d %c %d = %d", x, op, y, x * y);
+				else if (op == '/')
+				printf("%d %c %d = %d", x, op, y, x / y);
+				else if (op == '%')
+				printf("%d %c %d = %d", x, op, y, x % y);
+
+				else
+				printf("지정되지않은 연산자입니다.");
+				*/
+
+				/*switch문
+
+				int number;
+
+				printf("정수를 입력하시오.");
+				scanf("%d", &number);
 
-/*while을 이용한 마일을 미터로 바꾸는 프로그램
-{
-	int meter;
-	int i = 0;
+				switch(number)
+				{
+					case 0:
+						printf("없음\n");
+						break;
+					case 1:
+						printf("하나\n");
+						break;
+					case 2:
+					case 3:
+						printf("두서너개\n");
+						break;
+
+				default:
+					printf("많음");
+					break;
+				}*/
+
+				/*달의일수를 알 수 있는 프로그램
+
+				int month, days;
+
+				printf("일수를 알고싶은 달을 입력하시오.");
+				scanf("%d", &month);
+
+				switch(month)
+				{
+					case 2:
+						days = 28;
+						break;
+					case 4:
+					case 6:
+					case 9:
+					case 11:
+						days = 30;
+						break;
 
-	while (i < 3)
-	{
-		meter = i * 1609;
-		printf("이 %d마일은 %d미터입니다.\n", i, meter);
-		i++;
-	}
+					default:
+						days = 31;
+						break;
 
-}
-*/
 
-/*while 문을 이용한 구구단 출력 프로그램
-int n;
-int i = 1;
+				}
+				printf("%d의일수는 %d입니다.", month, days);
+				*/
 
-printf("출력하고싶은 단을 입력하시오\n");
-scanf("%d", &n);
+				/*사칙연산 계산기 만들기2
 
-while(i <= 9)
-{
-	printf("%d * %d = %d \n", n, i, n*i);
-	i++;
+				int num1;
+				int num2;
+				char operation;
 
-}
-*/
+				printf("첫번째 숫자를 입력하세요 :\n");
+				scanf("%d", &num1);
 
-/*for문을 이용한 구구단 출력 프로그램(세로)
+				printf("원하시는 연산자를 입력하시오 :\n");
+				scanf(" %c", &operation);
 
-for(int i = 1;i<10; i++)
-{
-	for(int j = 1;j<=10; j++)
-	{
-		printf("%d * %d = %d \n", i, j, (i * j));
-	}
-	printf("\n");
-}
-*/
+				printf("두번째 숫자를 입력하세요 :\n");
+				scanf("%d", &num2);
+
+				if (operation == '+')
+					printf("%d %c %d = %d \n", num1, operation, num2, num1+num2);
 
+				else if (operation == '-')
+					printf("%d %c %d = %d \n", num1, operation, num2, num1-num2);
 
-/*while 문을 이용한 제곱값 출력 프로그램
-	int n;
+				else if (operation == '*')
+					printf("%d %c %d = %d \n", num1, operation, num2, num1*num2);
+
+				else if (operation == '/')
+					printf("%d %c %d = %d \n", num1, operation, num2, num1/num2);
+
+				else if (operation == '%')
+					printf("%d %c %d = %d \n", num1, operation, num2, num1%num2);
+				else
+					printf("지정되지 않은 연산자입니다.");
+
+				*/
 
-	printf("============================\n");
-	printf("  n      n의 제곱 \n");
-	printf("============================\n");
+				/*문자들을 분류하는 프로그램
+				char ch;
 
-	n = 1;
-	while (n <= 10)
-	{
-		printf("%3d  %5d\n", n, n * n);
-		n++;
-	}
-*/
+				printf("문자를 입력하시오: ");
+				scanf("%c", &ch);
 
+				if (ch >= 'A' && ch <= 'Z')
+					printf("%c는 대문자입니다.\n", ch);
+				else if (ch >= 'a' && ch <= 'z')
+					printf("%c는 소문자입니다.\n", ch);
+				else if (ch >= '0' && ch <= '9')
+					printf("%c는 숫자입니다.\n", ch);
+				else
+					printf("%c는 기타문자입니다.\n", ch);
 
+				*/
+
+				/*사칙연산 계산기:switch버전
 
+				int x;
+				int y;
+				char op;
 
-/* 임의의 정수의 범위까지 합을 구하는 프로그램
+				printf("수식을 입력하시오:\n");
+				scanf("%d %c %d", &x, &op, &y);
+
+				switch (op)
+				{
+					case '+':
+						printf("%d %c %d = %d\n", x, op, y, x + y);
+					break;
 
-int i, n, sum;
+					case '-':
+						printf("%d %c %d = %d\n", x, op, y, x - y);
+					break;
 
-printf("정수를 입력하시오:");
-scanf("%d", &n);
+					case '*':
+						printf("%d %c %d = %d\n", x, op, y, x * y);
+					break;
 
-i = 1;
-sum = 0;
+					case '/':
+						printf("%d %c %d = %d\n", x, op, y, x / y);
+					break;
 
-while (i <= n)
-{
-	sum += i;
-	i++;
-}
+					case '%':
+						printf("%d %c %d = %d\n", x, op, y, x % y);
+					break;
 
-printf("1부터 %d까지의 합은 %d입니다 \n", n, sum);
-*/
+					default:
+						printf("지원되지 않는 연산자입니다.\n");
+						break;
 
-/*나눗셈을 하기 전에 분모가 0인지를 if-els 문을 이용하기 
 
-int n1, n2, n3;
+				}
+				*/
 
-printf("정수를 입력하시오.:\n");
-scanf("%d", &n1);
+				/*마일을 미터로 바꾸는 프로그램
+				{
+					int meter;
 
-printf("정수를 입력하시오.:\n");
-scanf("%d", &n2);
+					meter = 0 * 1609;
+					printf("0마일은 %d미터입니다.\n", meter);
 
-if (n2 == 0)
-	{
-		printf("0으로는 나눌 수 없습니다.\n");
+					meter = 1 * 1609;
+					printf("1마일은 %d미터입니다.\n", meter);
 
-	}
-else
-	n3 = n1 / n2;
-		printf("결과는 %d입니다.", n3);
+					meter = 2 * 1609;
+					printf("2마일은 %d미터입니다.\n", meter);
+				}
+				*/
 
-*/
+				/*while을 이용한 마일을 미터로 바꾸는 프로그램
+				{
+					int meter;
+					int i = 0;
 
+					while (i < 3)
+					{
+						meter = i * 1609;
+						printf("이 %d마일은 %d미터입니다.\n", i, meter);
+						i++;
+					}
 
+				}
+				*/
 
-/* while 문을 이용한 합계 프로그램 
+				/*while 문을 이용한 구구단 출력 프로그램
+				int n;
+				int i = 1;
 
-int n;
-int i = 0;
-int sum = 0;
+				printf("출력하고싶은 단을 입력하시오\n");
+				scanf("%d", &n);
 
-while(i < 5)
-{
-	printf("값을 입력하시오 : \n");
-	scanf("%d", &n);
+				while(i <= 9)
+				{
+					printf("%d * %d = %d \n", n, i, n*i);
+					i++;
 
-	sum = sum + n;
-	i++;
-}
-printf("합계는 %d입니다.\n", sum);
+				}
+				*/
 
-*/
+				/*for문을 이용한 구구단 출력 프로그램(세로)
 
-/* 성적을 입력받아서 합계를 구하고 학생 수를 센다.  
+				for(int i = 1;i<10; i++)
+				{
+					for(int j = 1;j<=10; j++)
+					{
+						printf("%d * %d = %d \n", i, j, (i * j));
+					}
+					printf("\n");
+				}
+				*/
 
-int s ;
-float sum ;
-float average ;
-int i ;
 
-s = 0;
-sum = 0;
-average = 0;
-i = 0;
+				/*while 문을 이용한 제곱값 출력 프로그램
+					int n;
 
-printf("성적 입력을 종료하려면 음수를 입력하시오\n");
+					printf("============================\n");
+					printf("  n      n의 제곱 \n");
+					printf("============================\n");
 
+					n = 1;
+					while (n <= 10)
+					{
+						printf("%3d  %5d\n", n, n * n);
+						n++;
+					}
+				*/
 
-while (s >= 0)
-{
-	printf("성적을 입력하시오: \n");
-	scanf("%d", &s);
-	sum += s;
-	i++;
 
-}
-	sum = sum - s;
-	i--;
-	
-	average = sum / i;
-	printf("성적의 평균은 %f입니다.", average);
 
-*/
+
+				/* 임의의 정수의 범위까지 합을 구하는 프로그램
+
+				int i, n, sum;
+
+				printf("정수를 입력하시오:");
+				scanf("%d", &n);
+
+				i = 1;
+				sum = 0;
+
+				while (i <= n)
+				{
+					sum += i;
+					i++;
+				}
+
+				printf("1부터 %d까지의 합은 %d입니다 \n", n, sum);
+				*/
+
+				/*나눗셈을 하기 전에 분모가 0인지를 if-els 문을 이용하기
+
+				int n1, n2, n3;
+
+				printf("정수를 입력하시오.:\n");
+				scanf("%d", &n1);
+
+				printf("정수를 입력하시오.:\n");
+				scanf("%d", &n2);
+
+				if (n2 == 0)
+					{
+						printf("0으로는 나눌 수 없습니다.\n");
+
+					}
+				else
+					n3 = n1 / n2;
+						printf("결과는 %d입니다.", n3);
+
+				*/
+
+
+
+				/* while 문을 이용한 합계 프로그램
+
+				int n;
+				int i = 0;
+				int sum = 0;
+
+				while(i < 5)
+				{
+					printf("값을 입력하시오 : \n");
+					scanf("%d", &n);
+
+					sum = sum + n;
+					i++;
+				}
+				printf("합계는 %d입니다.\n", sum);
+
+				*/
+
+/* 성적을 입력받아서 합계를 구하고 학생 수를 센다.
+
+				int s ;
+				float sum ;
+				float average ;
+				int i ;
+
+				s = 0;
+				sum = 0;
+				average = 0;
+				i = 0;
+
+				printf("성적 입력을 종료하려면 음수를 입력하시오\n");
+
+
+				while (s >= 0)
+				{
+					printf("성적을 입력하시오: \n");
+					scanf("%d", &s);
+					sum += s;
+					i++;
+
+				}
+					sum = sum - s;
+					i--;
+
+					average = sum / i;
+					printf("성적의 평균은 %f입니다.", average);
+
+				*/
 
 /* while문을 이용한 최대 공약수 구하기 프로그램
-int x;
-int y;
-int r;
+				int x;
+				int y;
+				int r;
 
-x = 0;
-y = 0;
-r = 0;
+				x = 0;
+				y = 0;
+				r = 0;
 
-printf("두 개의 정수를 입력하시오.\n");
-scanf("%d %d", &x, &y);
+				printf("두 개의 정수를 입력하시오.\n");
+				scanf("%d %d", &x, &y);
 
-while (y != 0)
-{
-	r = x % y;
-	x = y;
-	y = r;
+				while (y != 0)
+				{
+					r = x % y;
+					x = y;
+					y = r;
 
-}
+				}
 
-printf("최대공약수는 %d와 같습니다.\n", x);
-*/
+				printf("최대공약수는 %d와 같습니다.\n", x);
+				*/
 
 /*do while 문을 이용한 메뉴
 
-int x;
-x = 0;
+				int x;
+				x = 0;
 
-do
-{
-	printf("1-----새로 만들기\n");
-	printf("2-----파일 열기\n");
-	printf("3-----파일 닫기\n");
+				do
+				{
+					printf("1-----새로 만들기\n");
+					printf("2-----파일 열기\n");
+					printf("3-----파일 닫기\n");
 
-	printf("버튼넘버를 입력하시오:");
-	scanf("%d", &x);
+					printf("버튼넘버를 입력하시오:");
+					scanf("%d", &x);
 
-}
+				}
 
 
-while (x < 1 || 3 < x)
-	printf("유효하지않은 버튼입니다.다시 입력해주세요");
-	scanf("%d", &x);
+				while (x < 1 || 3 < x)
+					printf("유효하지않은 버튼입니다.다시 입력해주세요");
+					scanf("%d", &x);
 
-	printf("선택된 메뉴 = %d \n", x);
-*/
+					printf("선택된 메뉴 = %d \n", x);
+				*/
 
 /*반복을 이용한 정수합 프로그램
-int sum = 0;
-int i;
+				int sum = 0;
+				int i;
 
-for (i = 1; i <= 10 ; i++)
-{
-	sum = sum + i;
-}
-printf("1부터 10까지의 정수합은 %d입니다.", sum);
-*/
+				for (i = 1; i <= 10 ; i++)
+				{
+					sum = sum + i;
+				}
+				printf("1부터 10까지의 정수합은 %d입니다.", sum);
+				*/
 
 /*반복을 이용한 세제곱값 구하기
-int i;
-int n;
+				int i;
+				int n;
 
-printf("정수를 입력하시오.");
-scanf("%d", &n);
+				printf("정수를 입력하시오.");
+				scanf("%d", &n);
 
-printf("================================= \n");
-printf("    i    i의세제곱\n");
-printf("================================= \n");
+				printf("================================= \n");
+				printf("    i    i의세제곱\n");
+				printf("================================= \n");
 
-for (i = 1; i <= n; i++)
+				for (i = 1; i <= n; i++)
 
-printf("  %3d  %5d \n", i, i * i * i);
+				printf("  %3d  %5d \n", i, i * i * i);
 
-*/
+				*/
 
-/* 반복을 이용한 팩토리얼 구하기 */
+/* 반복을 이용한 팩토리얼 구하기
 
-int i;
-int n;
-int mut;
+				int i;
+				int n;
+				int mut;
 
-mut = 1;
+				mut = 1;
 
-printf("팩토리얼을 적용할 정수를 입력하십시오:\n");
-scanf("%d", &n);
+				printf("팩토리얼을 적용할 정수를 입력하십시오:\n");
+				scanf("%d", &n);
 
-for (i = 1; i <= n; i++)
+				for (i = 1; i <= n; i++)
+				{
+					mut = mut * i;
+				}
+
+				printf("%d!은 %d다.",n, mut);
+
+				*/
+
+/*별짓기 프로그램
+				int ss; //별 갯수
+				int n; //임의 지정 별 갯수
+				int ll; //줄 갯수
+
+				printf("출력할 별 갯수를 입력하시오.:\n");
+				scanf("%d", &n);
+
+				for(ll = 1; ll <= 5; ll++)
+				{
+					for (ss = 1; ss <= n; ss++)
+					{
+						printf("*");
+					}
+
+					printf("\n");
+
+				}
+				*/
+
+/*임의의 학생의 5번 친 시험 성적의 평균을 구하기*/
+
+int s, t;
+float score, total, average;
+total = 0;
+
+for (s = 0; s < 20; s++)
 {
-	mut = mut * i;
+	for (t = 0; t < 5; t++)
+	{
+		
+		printf("%d번 학생에 대한 % d번째 성적 : ", s + 1, t + 1);
+		scanf("%f", &score);
+		total += score;
+	}
+	average = total / 5.0;
+	printf("%d번 학생의 성적 평균: %f\n", s + 1, average);
 }
-
-printf("%d!은 %d다.",n, mut);
-
 return 0;
 
 
