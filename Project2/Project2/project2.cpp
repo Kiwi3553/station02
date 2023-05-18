@@ -825,7 +825,7 @@ for (i = 1; i <= 10 ; i++)
 printf("1부터 10까지의 정수합은 %d입니다.", sum);
 */
 
-/*반복을 이용한 세제곱값 구하기*/
+/*반복을 이용한 세제곱값 구하기
 int i;
 int n;
 
@@ -840,6 +840,25 @@ for (i = 1; i <= n; i++)
 
 printf("  %3d  %5d \n", i, i * i * i);
 
+*/
+
+/* 반복을 이용한 팩토리얼 구하기 */
+
+int i;
+int n;
+int mut;
+
+mut = 1;
+
+printf("팩토리얼을 적용할 정수를 입력하십시오:\n");
+scanf("%d", &n);
+
+for (i = 1; i <= n; i++)
+{
+	mut = mut * i;
+}
+
+printf("%d!은 %d다.",n, mut);
 
 return 0;
 
