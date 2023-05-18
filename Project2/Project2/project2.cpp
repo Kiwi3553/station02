@@ -916,7 +916,7 @@ while (1)
 }
 */
 
-/*break을 이용하여 학생의 성적을 합산하고 평균을 산출하는 무한루프 탈출하기*/
+/*break을 이용하여 학생의 성적을 합산하고 평균을 산출하는 무한루프 탈출하기
 
 float grade, sum = 0, average; 
 int count = 0;  //과목수 or 평균의 기준 요소
@@ -933,6 +933,26 @@ while (1)
 }
 average = sum / count;
 printf("학생들의 성적의 평균은 %f입니다.\n", average);
+*/
+
+
+/* 소문자를 대문자로 변경하는 프로그램에 continue 써보기*/
+
+char letter;
+
+while(1)
+{
+	printf("소문자를 입력하시오:");
+	scanf("%c", &letter);
+
+	if(letter == 'Q')
+		break;
+	if(letter<'a'||letter>'z')
+		continue;
+
+	letter -= 32; //아스키코드 대문자 소문자차가 32
+	printf("변환된 대문자는 %c입니다.\n",  letter);
+}
 
 return 0;
 
