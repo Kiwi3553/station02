@@ -736,7 +736,7 @@ printf("합계는 %d입니다.\n", sum);
 
 */
 
-/* 성적을 입력받아서 합계를 구하고 학생 수를 센다.  */
+/* 성적을 입력받아서 합계를 구하고 학생 수를 센다.  
 
 int s ;
 float sum ;
@@ -765,8 +765,29 @@ while (s >= 0)
 	average = sum / i;
 	printf("성적의 평균은 %f입니다.", average);
 
+*/
 
+/* while문을 이용한 최대 공약수 구하기 프로그램*/
+int x;
+int y;
+int r;
 
+x = 0;
+y = 0;
+r = 0;
+
+printf("두 개의 정수를 입력하시오.\n");
+scanf("%d %d", &x, &y);
+
+while (y != 0)
+{
+	r = x % y;
+	x = y;
+	y = r;
+
+}
+
+printf("최대공약수는 %d와 같습니다.\n", x);
 return 0;
 
 
