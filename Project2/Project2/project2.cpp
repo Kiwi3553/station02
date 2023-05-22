@@ -1002,7 +1002,7 @@ for(date = 1; date <= DAYS_OF_MONTH; date++)                   //for문을 이용해�
 printf("\n=====================\n");                           //달력 프레임 마무리 
 */
 
-/*함수 에제*/
+/*함수 에제
 
 //예제1
 정수의 제곱값을 게산하는 함수
@@ -1136,14 +1136,56 @@ int 메인(void)
 
 	printf("빗변=%f 각도=%f \n", r, theta);
 }
+*/
 
 
 
+/*지역변수 예제*/
 
 
+예제 1
+int i;
 
+for (i = 0, i < 5; i++)
+{
+	int temp = 1;                    //블록이 시작할 때마다 생성되어 초기화된다.
+	printf("temp = %d\n", temp);
+	temp++;
+}
 
+예제2
+{
+	int i;
 
+	i = 10;
+	printf("함수 호출전 i=%d\n", i);
+	inc(i);        //값에 의한 호출
+	printf("함수 호출전 i=%d\n", i);
+	return 0;
+}
+int inc(int counter)
+{
+	counter++;
+	return counter;
+}
+
+예제3
+int x = 123;
+
+void sub1()
+{
+	printf("In sub1() x=%d\n", x);
+}
+void sub2()
+{
+	printf("In sub2() x=%d\n", x);
+}
+int main(void)
+{
+	sub1();
+	sub2();
+
+}
 
 
 
