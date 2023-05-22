@@ -2,9 +2,13 @@
 #include <stdio.h>
 #include <math.h>
 
-#define RATE 0.07         // 이율
-#define INVESTMENT 10000000    //초기 투자금
-#define YEARS     10      // 투자 기간
+//#define RATE 0.07         // 이율
+//#define INVESTMENT 10000000    //초기 투자금
+//#define YEARS     10      // 투자 기간
+
+#define START_DAY    3      // 첫번째 날이 수요일 
+#define DAYS_OF_MONTH    31 // 달의 일수
+
 
 int main()
 {
@@ -958,7 +962,7 @@ while(1)
 }
 */
 
-/* 복리이자계산 */
+/* 복리이자계산 
 
 int i;
 double total = INVESTMENT; //원리금 합계
@@ -972,6 +976,176 @@ for (i = 1; i <= YEARS; i++)
 	total = total * (1 + RATE);     // 새로운 원리금 계산
 	printf("%2d %10.1f\n", i, total);
 }
+*/
+
+/* 달력 만들기 
+
+int day, date;                                                 //변수 선언(요일과 일자)
+printf("=====================\n");                             //달력 프레임 셋팅과 줄넘김
+printf("일 월 화 수 목 금 토 \n");
+printf("=====================\n");
+
+for(day = 0; day < START_DAY; day++)                           //for문을 이용해서 수요일 전까지 공백 만들기 
+
+	printf(" ");
+
+for(date = 1; date <= DAYS_OF_MONTH; date++)                   //for문을 이용해서 1일 부터 31일 반복해주기
+{
+	if (day == 7)                                              //일요일마다 줄넘김해주기 위해 for문 안에 7일 주기로 일욜에 줄넘김 출력
+	{
+		day = 0;
+		printf("\n");
+	}
+	day++;                                                     //요일이 넘어갈때마다 공백줘서 날짜 출력 
+	printf("%2d", date);
+}
+printf("\n=====================\n");                           //달력 프레임 마무리 
+*/
+
+/*함수 에제*/
+
+//예제1
+정수의 제곱값을 게산하는 함수
+
+반환값:int
+함수 이름:square
+매개 변수:int n
+
+int square(int n)
+{
+	return(n * n);
+	
+}
+
+//예제2
+두개의 정수중에서 큰 수를 계산하는 함수
+반환값:int
+함수 이름: get_max
+매개 변수:int x,int y
+
+int get_max(int x, int y)
+{
+	if (x > y)return(x);
+	else return(y);
+}
+
+//예제3
+정수의 절대값을 계산하는 함수
+반환값 : int
+함수 이름 : absolute
+매개 변수 : int x
+
+int absolute(int x)
+{
+	if (x > 0)
+		return x;
+	else
+		return -x;
+}
+
+//예제4
+별표 기호를 이용하여 정사각형을 그리는 함수
+
+반환값 : void
+함수 이름 : draw_rect
+매개 변수 : int side
+
+void draw_rect(int side)
+{
+	int x, y;
+	for (y = 0; y < side; y++)
+	{
+		for (x = 0; x < side; x++)
+			printf("*");
+			printf("\n");
+	}
+	return;
+}
+
+//예제5
+정수의 거듭 제곱값(x^y)을 계산하는 함수
+반환값:int
+함수 이름 : power
+매개 변수 : int x,int y
+
+int power(int x, int y)
+{
+	int i;
+	longlong result = 1;
+
+	for (i = 0; i < y; i++)
+		result  *=  x;
+	return result;
+}
+
+//예제6
+팩토리얼값(n!)을 계산하는 함수
+반환값 : int
+함수 이름 : factorial
+매개 변수 : int n
+
+int factorial(int n)
+{
+	int i;
+	longlong result = 1;
+
+	for (i = 1; i <= n: i++)
+		result *= i;
+
+	return result;
+}
+
+//함수 원형 예제
+
+int compute_sum(int n);
+
+int 메인(void)
+{
+	int n, sum;
+
+	printf("정수를 입력하시오:");
+	scanf("%d", &n);
+
+	sum = compute_sum(n);        //함수 사용
+	printf("1부터 %d까지의 합은 %d입니다. \n", n, sum);
+
+}
+int compute_sum(int n)
+{
+	int i;
+	int result = 0;
+
+	for (i = 1; i <= n; i++)
+		result += i;
+	return result;
+}
+
+//직각 삼각형 예제
+
+#define RAD_TO_DEG(45.0/atan(1))
+
+int 메인(void)
+{
+	double w, h, r, theta;
+
+	printf("밑변과 높이를 입력하시오:");
+	scanf("%lf %lf", &w, &h);
+
+	r = sqrt(w * w + h * h);
+	theta = RAD_TO_DEG * atan2(h, w);
+
+	printf("빗변=%f 각도=%f \n", r, theta);
+}
+
+
+
+
+
+
+
+
+
+
 
 return 0;
 

@@ -1,2 +1,6 @@
 ﻿  project2.cpp
-  Project2.vcxproj -> C:\Users\user\Desktop\직면\2023 취업준비\C++\강의용\station02\Project2\x64\Debug\Project2.exe
+C:\Users\user\Desktop\직면\2023 취업준비\C++\강의용\station02\Project2\Project2\project2.cpp(1015,1): error C2143: 구문 오류: ';'이(가) '{' 앞에 없습니다.
+C:\Users\user\Desktop\직면\2023 취업준비\C++\강의용\station02\Project2\Project2\project2.cpp(1016,4): error C2065: 'n': 선언되지 않은 식별자입니다.
+C:\Users\user\Desktop\직면\2023 취업준비\C++\강의용\station02\Project2\Project2\project2.cpp(1017,11): error C2065: 'n': 선언되지 않은 식별자입니다.
+C:\Users\user\Desktop\직면\2023 취업준비\C++\강의용\station02\Project2\Project2\project2.cpp(1017,14): error C2065: 'n': 선언되지 않은 식별자입니다.
+C:\Users\user\Desktop\직면\2023 취업준비\C++\강의용\station02\Project2\Project2\project2.cpp(1018,16): error C2065: 'n': 선언되지 않은 식별자입니다.
