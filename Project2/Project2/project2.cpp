@@ -1140,7 +1140,7 @@ int 메인(void)
 
 
 
-/*지역변수 예제*/
+/*지역변수 예제
 
 
 예제 1
@@ -1186,6 +1186,31 @@ int main(void)
 	sub2();
 
 }
+*/
+
+/*거듭제곱 구하기*/
+
+//반복문 ver.
+double slow_power(double x, int n)
+{
+	int i;
+	double r = 1.0;
+
+	for (i = 0; i < n; i++)
+		r = r * x;
+	return(r);
+}
+
+//순환호출문 ver.
+double power(double x, int n)
+{
+	if (n == 0)return 1;
+	else if ((n % 2) == 0)
+		return power(x * x, n / 2);
+	else return x * power(x * x, (n - 1) / 2);
+}
+
+
 
 
 
