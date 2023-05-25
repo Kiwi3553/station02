@@ -1188,7 +1188,7 @@ int main(void)
 }
 */
 
-/*거듭제곱 구하기*/
+/*거듭제곱 구하기
 
 //반복문 ver.
 double slow_power(double x, int n)
@@ -1209,6 +1209,74 @@ double power(double x, int n)
 		return power(x * x, n / 2);
 	else return x * power(x * x, (n - 1) / 2);
 }
+*/
+
+/*피보나치 수열 예제
+//재귀함수 ver.1
+int fib(int n)
+{
+	if (n == 0) return 0;                          //0이 되면 0을 반환해라 = 0이 되면 종료 
+	if (n == 1) return 1;                          //1이 되면 1을 반환해라 = 1이 되면 종료 
+	return(fib(n - 1) + fib(n - 2));               //n이 2이상이라면 순환호출 차례대로 넣어서 0과 1이 될때까지 돌리면 피보나치 수열값대로 반환됨
+
+}
+
+//재귀함수 ver.2
+
+int fibo(int n)
+{
+	if (n == 0) return 0;    
+	else if (n == 1) return 1;
+	else return fibo(n - 1) + fibo(n - 2);
+}
+
+int 메인(void)
+{
+	int n;
+	int i;
+
+	printf("피보나치 수 입력: \n");
+	scanf("&d", &n);
+
+	for (i = 0; i < n; i++) {
+		printf("%d", fibo(i));
+	}
+
+	printf("\n\n");
+	system("pause");
+
+	return 0;
+
+}
+//이런식으로 호출해서 쓰임
+
+//for ver
+
+int i;                           //반복횟수 변수 선언
+int n;                           //입력값 변수 선언
+int head = 0;                    //두 단계 전 값
+int mid = 0;                     //한 단계 전 값
+int rear = 1;                    //두 개의 변수에 저장된 값을 더한 것 
+
+printf("피보나치 수 입력 : ");   //입력 안내문
+scanf("%d", &n);                 //입력 코드 
+
+for(i=0; i < n; i++)             //반복문( 0부터 하니깐 횟수 고려)
+   { 
+	printf("%d", head);          //피보나치 수 출력문(첫번째 숫자이자 전단계 전전단계가 될 수 잇는 head가 곧 수열이됨)
+	mid = head + rear;           //mid가 전단계와 전전단계의 합
+	head = rear;                 //한단계전이 두번째전로 되는 코드
+	rear = mid;                  //더한게 한단계전이 되는 코드
+    }
+
+	printf("\n\n");              //수열 간 공백 두칸
+	system("pause");             
+	return 0;
+*/
+
+
+
+
 
 
 
