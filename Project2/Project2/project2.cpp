@@ -1274,6 +1274,27 @@ for(i=0; i < n; i++)             //반복문( 0부터 하니깐 횟수 고려)
 	return 0;
 */
 
+/*하노이의탑*/
+하노이의탑 예제(A에서 C로 원판 N개를 규칙에 맞춰 옮겨라)
+int n;                //원판 갯수 선언
+char from;            //원판 위치 시작점 
+char tmp;             //원판 위치 중간점
+char to;              //원판 종료점
+
+void hanoi_tower(int n, char from, char tmp, char to)
+{
+	if (n == 1)printf("원판 1을 %c 에서 %c으로 옮긴다.\n", from, to);     //원판이 1개이거나 혹은 1개만 남았다면 A에서 C로 옮겨라(순환 정지문)
+	else {
+		hanoi_tower(n - 1, from, to, tmp);                        //순환 호출 작동. 이때 맨 밑 원판을 제외한 n-1 즉 나머지 원판들을 목적지C가 아닌 다른지점인 TMP로 옮김 
+		printf("원판 %d을 %c에서 %c으로 옮긴다.\n", n, from, to);   //맨 아래 원반을 목적지로 이동시킴
+		hanoi_tower(n - 1, tmp, from, to)                         //두번째 순환 호출 작동,다른곳으로 옮겼던 원반들을 목적지에 옮기는것
+	}
+}
+main()
+{
+	hanoi_tower(n, 'A', 'B', 'C');
+}
+
 
 
 
