@@ -1372,7 +1372,7 @@ for (i = 0; i < SIZE; i++)
 	b[i] = a[i];
 */
 
-/*배열의 비교*/
+/*배열의 비교
 int i;
 int a[SIZE] = { 1,2,3,4,5 };
 int b[SIZE] = { 1,2,3,4,5 };
@@ -1386,13 +1386,33 @@ for (i = 0; i < SIZE; i++)
 	}
 }
 printf("a[]와 b[]는 같습니다.\n");
+*/
 
 
+/*배열 원소의 개수 계산
+int grade[] = { 1,2,3,4,5,6 };
+int i, size;
 
+size = sizeof(grade) / sizeof(grade[0]);
 
+for (i = 0; i < size; i++)
+	printf("%d", grade[i]);
+*/
 
+/*배열 원소 역순 출력*/
+int data[SIZE];
+int i;
 
+for (i = 0; i < SIZE; i++)
+{
+	printf("정수를 입력하시오:");
+	scanf("%d", &data[i]);
+}
 
+for (i = SIZE - 1; i >= 0; i--)
+{
+	printf("%d\n", data[i]);
+}
 
 
 return 0;
