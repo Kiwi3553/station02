@@ -11,7 +11,7 @@
 #define DAYS_OF_MONTH    31 // 달의 일수
 
 #define STUDENTS 5
-#define SIZE 5
+#define SIZE 101
 
 int main()
 {
@@ -1415,6 +1415,7 @@ for (i = SIZE - 1; i >= 0; i--)
 }
 */
 
+/*배열 인덱스만큼 별 출력하기
 int grade[STUDENTS] = { 30,20,10,40,50 };
 int i, s;
 
@@ -1425,6 +1426,51 @@ for (i = 0; i < STUDENTS; i++)
 		printf("*");
 	printf("\n");
 }
+*/
+
+/*최소값 탐색
+int grade[SIZE];
+int i, min;
+
+for (i = 0; i < SIZE; i++)
+{
+	printf("성적을 입력하시오:");
+	scanf("%d", &grade[i]);
+}
+
+min = grade[0];
+
+for (i = 1; i < SIZE; i++)
+{
+	if (grade[i] < min)
+		min = grade[i];
+}
+printf("최소값은 %d입니다.\n", min);
+
+*/
+
+/*빈도 계산*/
+
+int freq[SIZE];
+int i, score;
+
+for (i = 0; i < SIZE; i++)
+	freq[i] = 0;
+
+while (1)
+{
+	printf("숫자를 입력하시오(종료-1): ");
+	scanf("%d", &score);
+	if (score < 0)break;
+	freq[score]++;
+
+}
+
+printf("값 빈도\n");
+
+for (i = 0; i < SIZE; i++)
+	printf("%3d  %3d\n", i, freq[i]);
+
 
 return 0;
 }
