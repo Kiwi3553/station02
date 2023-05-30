@@ -1343,7 +1343,7 @@ for (i = 0; i < SIZE; i++)
 	printf("%5d  %5d\n", i, grade[i]);
 */
 
-/*배열 원소 사용 예제-성적 평균값 프로그램*/
+/*배열 원소 사용 예제-성적 평균값 프로그램
 int grade[STUDENTS];        //define으로 정의한 기호상수 STUDENTS(학생수=5)를 배열크기로 받아온 정수형을 담는 배열 grade를 선언 
 int sum = 0;                //합계값을 담을 변수 sum을 선언
 int i, average;             //for에 쓰일 반복 회수 i 와 평균값 변수 선언
@@ -1360,9 +1360,15 @@ for (i = 0; i < STUDENTS; i++)                                  //5명의 합계를 �
 average = sum / STUDENTS;                                       //평균에 합계 나누기 학생수한걸 대입한다
 prinrf("성적 평균=%d\n", average);                              //평균값 받아 평균값 출력
 
+*/
 
+/*배열의 복사*/
+int i;
+int a[SIZE] = { 1,2,3,4,5 };
+int b[SIZE];
 
-
+for (i = 0; i < SIZE; i++)
+	b[i] = a[i];
 
 
 
