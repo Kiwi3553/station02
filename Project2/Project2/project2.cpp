@@ -10,7 +10,7 @@
 #define START_DAY    3      // 첫번째 날이 수요일 
 #define DAYS_OF_MONTH    31 // 달의 일수
 
-#define SIZE 10
+#define STUDENTS 5
 
 int main()
 {
@@ -1327,7 +1327,7 @@ for (i = 0; i < 10; i++)
 */
 
 
-/*배열 원소 참조 예제*/
+/*배열 원소 참조 예제
 
 int grade[SIZE];
 int i;
@@ -1341,6 +1341,33 @@ printf("=======================\n");
 
 for (i = 0; i < SIZE; i++)
 	printf("%5d  %5d\n", i, grade[i]);
+*/
+
+/*배열 원소 사용 예제-성적 평균값 프로그램*/
+int grade[STUDENTS];        //define으로 정의한 기호상수 STUDENTS(학생수=5)를 배열크기로 받아온 정수형을 담는 배열 grade를 선언 
+int sum = 0;                //합계값을 담을 변수 sum을 선언
+int i, average;             //for에 쓰일 반복 회수 i 와 평균값 변수 선언
+
+for (i = 0; i < STUDENTS; i++)                                  //5명의 성적을 받기위한 입출력문을 반복
+{
+	printf("학생들의 성적을 입력하시오:");
+	scanf("%d", &grade[i]);                                     //성적을 받아서 선언한 배열의 주소값으로 접근시켜 값을 넣어준다
+
+}
+for (i = 0; i < STUDENTS; i++)                                  //5명의 합계를 도출하기 위한 반복문 
+	sum += grade[i];
+
+average = sum / STUDENTS;                                       //평균에 합계 나누기 학생수한걸 대입한다
+prinrf("성적 평균=%d\n", average);                              //평균값 받아 평균값 출력
+
+
+
+
+
+
+
+
+
 
 
 return 0;
