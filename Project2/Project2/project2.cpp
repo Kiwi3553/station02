@@ -11,6 +11,7 @@
 #define DAYS_OF_MONTH    31 // 달의 일수
 
 #define STUDENTS 5
+#define SIZE 5
 
 int main()
 {
@@ -1362,13 +1363,31 @@ prinrf("성적 평균=%d\n", average);                              //평균값 받아 평
 
 */
 
-/*배열의 복사*/
+/*배열의 복사
 int i;
 int a[SIZE] = { 1,2,3,4,5 };
 int b[SIZE];
 
 for (i = 0; i < SIZE; i++)
 	b[i] = a[i];
+*/
+
+/*배열의 비교*/
+int i;
+int a[SIZE] = { 1,2,3,4,5 };
+int b[SIZE] = { 1,2,3,4,5 };
+
+for (i = 0; i < SIZE; i++)
+{
+	if (a[i] != b[i])
+	{
+		printf("a[]와 b[]는 같지 않습니다.\n");
+		return 0;
+	}
+}
+printf("a[]와 b[]는 같습니다.\n");
+
+
 
 
 
