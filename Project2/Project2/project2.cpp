@@ -1449,7 +1449,7 @@ printf("최소값은 %d입니다.\n", min);
 
 */
 
-/*빈도 계산*/
+/*빈도 계산
 
 int freq[SIZE];
 int i, score;
@@ -1470,6 +1470,11 @@ printf("값 빈도\n");
 
 for (i = 0; i < SIZE; i++)
 	printf("%3d  %3d\n", i, freq[i]);
+
+*/
+
+
+
 
 
 return 0;
