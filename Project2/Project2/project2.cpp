@@ -1399,7 +1399,7 @@ for (i = 0; i < size; i++)
 	printf("%d", grade[i]);
 */
 
-/*배열 원소 역순 출력*/
+/*배열 원소 역순 출력
 int data[SIZE];
 int i;
 
@@ -1413,9 +1413,18 @@ for (i = SIZE - 1; i >= 0; i--)
 {
 	printf("%d\n", data[i]);
 }
+*/
 
+int grade[STUDENTS] = { 30,20,10,40,50 };
+int i, s;
+
+for (i = 0; i < STUDENTS; i++)
+{
+	printf("번호 %d:", i);
+	for (s = 0; s < grade[i]; s++)
+		printf("*");
+	printf("\n");
+}
 
 return 0;
-
-
 }
