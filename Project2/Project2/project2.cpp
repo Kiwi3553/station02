@@ -1,5 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
+#include<stdlib.h>
 #include <math.h>
 
 //#define RATE 0.07         // 이율
@@ -9,6 +10,7 @@
 #define START_DAY    3      // 첫번째 날이 수요일 
 #define DAYS_OF_MONTH    31 // 달의 일수
 
+#define SIZE 10
 
 int main()
 {
@@ -1311,7 +1313,7 @@ for (i = 0; i < 10; i++)
 	printf(" %3d % 8d\n", i, grade[i]);
 */
 
-/*배열 초기화 예제*/
+/*배열 초기화 예제
 int grade[10] = { 20,85,11,64,5,71,52,39,95.43 };
 int i;
 
@@ -1322,11 +1324,23 @@ printf("=======================\n");
 for (i = 0; i < 10; i++)
 
 	printf(" %3d  %7d\n", i, grade[i]);
+*/
 
 
+/*배열 원소 참조 예제*/
 
+int grade[SIZE];
+int i;
 
+for (i = 0; i < SIZE; i++)
+	grade[i] = rand() % 100;
 
+printf("=======================\n");
+printf("인덱스    값\n");
+printf("=======================\n");
+
+for (i = 0; i < SIZE; i++)
+	printf("%5d  %5d\n", i, grade[i]);
 
 
 return 0;
