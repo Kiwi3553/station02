@@ -11,7 +11,10 @@
 #define DAYS_OF_MONTH    31 // 달의 일수
 
 #define STUDENTS 5
-#define SIZE 101
+#define SIZE 6
+
+int get_average(int[], int);
+
 
 int main()
 {
@@ -1473,9 +1476,38 @@ for (i = 0; i < SIZE; i++)
 
 */
 
+/*주사위면 빈도 계산
+int freq[SIZE] = { 0 };
+int i;
 
+for (i = 0; i < 10000; i++)
+	++freq[rand() % 6];
 
+printf("=========================\n");
+printf("면      빈도\n");
+printf("=========================\n");
 
+for (i = 0; i < SIZE; i++)
+	printf("%3d   %3d \n", i, freq[i]);
+*/
+
+/*배열과 함수*/
+int grade[STUDENTS] = { 1,2,3,4,5 };                       //성적을 담을 배열 선언 및 초기화, 배열크기는 위에서 5라고 정의
+int avg;                                                   //평균값을 담을 변수 avg 선언 
+
+avg = get_average(grade, STUDENTS);                        //밑에서 정의한 평균 구하는 함수를 호출하는데 매게변수로 배열(=배열에 들어가는 성적)과 학생수(=5)를 받아옴
+printf("평균은 %d입니다.\n", avg);                         //평균을 함수로 부터 받아 출력
 
 return 0;
+
+}
+
+int get_average(int score[], int n)                        //위에서 선언한 평균을 구하는 함수의 정의문 ( 정수형 결과값을 반환하는 평균이라는 식별자의 함수로 매게변수로 스코어라는 배열과 정수형 n을 받는다.
+{
+	int i;                                                 //정수형 i 변수를 선언(이용목적 :   ) 
+	int sum = 0;                                           //합계 변수 선언 및 초기화 
+
+	for (i = 0; i < n; i++)                                //성적의 합계를 반복문을 통해 구하기 
+		sum += score[i];
+	return sum / n;                                        // 합계 / 과목수로 평균값 구하기 
 }
