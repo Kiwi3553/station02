@@ -1531,12 +1531,27 @@ string specialChars = "!@#$%^&*(\\'\"<>?:;";
 cout << specialChars;
 */
 
-/*계산식 출력하기*/
+/*계산식 출력하기
 int a = 4;
 int b = 5;
 int A = a + b;
 
 cout << a << "+" << b << "=" << A << endl;
+*/
+
+/*조건문을 이용하여 짝수 홀수별 구분하기*/
+int n;
+string a;
+cin >> n;
+
+if (n % 2 == 0) {
+	a = "is even";
+}
+else {
+	a = "is odd";
+}
+
+cout << a << endl;
 
 return 0;
 
