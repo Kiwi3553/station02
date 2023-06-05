@@ -1526,9 +1526,17 @@ cout << "변환된 문자열: " << converted_str << endl;
 
 */
 
-/*특수문자 출력하기*/
+/*특수문자 출력하기
 string specialChars = "!@#$%^&*(\\'\"<>?:;";
 cout << specialChars;
+*/
+
+/*계산식 출력하기*/
+int a = 4;
+int b = 5;
+int A = a + b;
+
+cout << a << "+" << b << "=" << A << endl;
 
 return 0;
 
