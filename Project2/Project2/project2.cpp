@@ -1504,7 +1504,7 @@ printf("평균은 %d입니다.\n", avg);                         //평균을 함수로 부터 
 */
 
 
-/*대소문자 변환 프로그램 구현*/
+/*대소문자 변환 프로그램 구현
 string str;
 std::cout << "문자열을 입력하세요: ";
 std::getline(cin, str);
@@ -1524,7 +1524,11 @@ for (char c : str) {
 
 cout << "변환된 문자열: " << converted_str << endl;
 
+*/
 
+/*특수문자 출력하기*/
+string specialChars = "!@#$%^&*(\\'\"<>?:;";
+cout << specialChars;
 
 return 0;
 
