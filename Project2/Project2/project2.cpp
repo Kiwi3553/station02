@@ -2,6 +2,10 @@
 #include <stdio.h>
 #include<stdlib.h>
 #include <math.h>
+#include <iostream>
+#include <string>
+
+//using namespace std;
 
 //#define RATE 0.07         // 이율
 //#define INVESTMENT 10000000    //초기 투자금
@@ -1491,17 +1495,42 @@ for (i = 0; i < SIZE; i++)
 	printf("%3d   %3d \n", i, freq[i]);
 */
 
-/*배열과 함수*/
+/*배열과 함수
 int grade[STUDENTS] = { 1,2,3,4,5 };                       //성적을 담을 배열 선언 및 초기화, 배열크기는 위에서 5라고 정의
 int avg;                                                   //평균값을 담을 변수 avg 선언 
 
 avg = get_average(grade, STUDENTS);                        //밑에서 정의한 평균 구하는 함수를 호출하는데 매게변수로 배열(=배열에 들어가는 성적)과 학생수(=5)를 받아옴
 printf("평균은 %d입니다.\n", avg);                         //평균을 함수로 부터 받아 출력
+*/
+
+
+/*대소문자 변환 프로그램 구현*/
+string str;
+std::cout << "문자열을 입력하세요: ";
+std::getline(cin, str);
+
+string converted_str = "";
+for (char c : str) {
+	if (c >= 'a' && c <= 'z') {
+		converted_str += (c - 32); // 소문자를 대문자로 변환
+	}
+	else if (c >= 'A' && c <= 'Z') {
+		converted_str += (c + 32); // 대문자를 소문자로 변환
+	}
+	else {
+		converted_str += c; // 알파벳이 아닌 경우 변환 없이 그대로 추가
+	}
+}
+
+cout << "변환된 문자열: " << converted_str << endl;
+
+
 
 return 0;
 
 }
 
+/*
 int get_average(int score[], int n)                        //위에서 선언한 평균을 구하는 함수의 정의문 ( 정수형 결과값을 반환하는 평균이라는 식별자의 함수로 매게변수로 스코어라는 배열과 정수형 n을 받는다.
 {
 	int i;                                                 //정수형 i 변수를 선언(이용목적 :   ) 
@@ -1511,3 +1540,4 @@ int get_average(int score[], int n)                        //위에서 선언한 평균�
 		sum += score[i];
 	return sum / n;                                        // 합계 / 과목수로 평균값 구하기 
 }
+*/
