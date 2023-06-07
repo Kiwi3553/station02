@@ -1630,18 +1630,18 @@ string solution(string my_string, int k) {
 */
 
 
-/*더 크게 합치기*/
+/*더 크게 합치기
 int solution(int a, int b) {
 	int answer = 0;
 
 	if (a < b) {
-		answer = b ? a;
+		answer = b 더하기원 a;
 	}
 	else if (a == b) {
-		answer = a ? b;
+		answer = a 더하기원 b;
 	}
 	else {
-		answer = a ? b;
+		answer = a 더하기원 b;
 	}
 	return answer;
 }
@@ -1656,3 +1656,24 @@ int solution(int a, int b) {
 	int BA = stoi(str2 + str1);
 
 	return max(AB, BA);
+
+	*/
+
+/*두 수의 연산값 비교하기*/
+int solution(int a, int b) {
+	int answer = 0;
+
+	string str1 = to_string(a);
+	string str2 = to_string(b);
+
+	int AB = stoi(str1 + str2);
+	int A = stoi(str1);
+	int B = stoi(str2);
+
+	int value = 2 * A * B;
+
+	if (AB == value)
+		return answer = AB;
+	else
+		return max(AB, value);
+}
