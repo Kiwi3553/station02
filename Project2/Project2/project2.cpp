@@ -1659,7 +1659,7 @@ int solution(int a, int b) {
 
 	*/
 
-/*두 수의 연산값 비교하기*/
+/*두 수의 연산값 비교하기
 int solution(int a, int b) {
 	int answer = 0;
 
@@ -1677,3 +1677,14 @@ int solution(int a, int b) {
 	else
 		return max(AB, value);
 }
+*/
+
+/*n의배수*/
+int solution(int num, int n) {
+	int answer = 0;
+
+	if (num % n == 0)
+		return 1;
+
+	else
+		return 0;
