@@ -1570,7 +1570,7 @@ int get_average(int score[], int n)                        //위에서 선언한 평균�
 */
 
 
-/*문자열 변환시키는 프로그램*/
+/*문자열 변환시키는 프로그램
 string my_string;
 string overwrite_string;
 //my_string = "";
@@ -1580,4 +1580,20 @@ string solution(string my_string, string overwrite_string, int s) {
 	int length = overwrite_string.length();
 	my_string.replace(s, length, overwrite_string);
 	return my_string;
+}
+*/
+
+/*문자열 섞는 함수*/
+
+string solution(string str1, string str2) {
+	string answer = "";
+	int length = str1.length();
+	for (i = 0; i < length; i++)
+	{
+		answer += str1[i];
+		answer += str2[i];
+
+	}
+	return answer;
+
 }
