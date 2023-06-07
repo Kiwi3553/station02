@@ -1617,7 +1617,7 @@ stirng solution(vector<string>arr) {
 }
 */
 
-/*문자열 곱하기*/
+/*문자열 곱하기
 int i;
 
 string solution(string my_string, int k) {
@@ -1627,3 +1627,32 @@ string solution(string my_string, int k) {
 		answer += my_string;
 	return answer;
 }
+*/
+
+
+/*더 크게 합치기*/
+int solution(int a, int b) {
+	int answer = 0;
+
+	if (a < b) {
+		answer = b ? a;
+	}
+	else if (a == b) {
+		answer = a ? b;
+	}
+	else {
+		answer = a ? b;
+	}
+	return answer;
+}
+
+
+int solution(int a, int b) {
+
+	string str1 = to_string(a);
+	string str2 = to_string(b);
+
+	int AB = stoi(str1 + str2);
+	int BA = stoi(str2 + str1);
+
+	return max(AB, BA);
