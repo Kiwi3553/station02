@@ -1583,7 +1583,7 @@ string solution(string my_string, string overwrite_string, int s) {
 }
 */
 
-/*문자열 섞는 함수*/
+/*문자열 섞는 함수
 
 string solution(string str1, string str2) {
 	string answer = "";
@@ -1595,5 +1595,22 @@ string solution(string str1, string str2) {
 
 	}
 	return answer;
+}
+*/
 
+
+/*문자 이어붙히기*/
+int i;
+
+string solution(vector<string> arr) {
+	string answer = "";
+	for (i = 0; i < arr.size(); i++)
+		answer += arr[i];
+
+	return answer;
+}
+
+stirng solution(vector<string>arr) {
+
+	return accumulate(arr.begin(), arr.end(), string(""));
 }
