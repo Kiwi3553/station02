@@ -1599,7 +1599,7 @@ string solution(string str1, string str2) {
 */
 
 
-/*문자 이어붙히기*/
+/*문자 이어붙히기
 int i;
 
 string solution(vector<string> arr) {
@@ -1613,4 +1613,17 @@ string solution(vector<string> arr) {
 stirng solution(vector<string>arr) {
 
 	return accumulate(arr.begin(), arr.end(), string(""));
+
+}
+*/
+
+/*문자열 곱하기*/
+int i;
+
+string solution(string my_string, int k) {
+	string answer = "";
+
+	for (i = 0; i < k; i++)
+		answer += my_string;
+	return answer;
 }
