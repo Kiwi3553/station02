@@ -15,9 +15,13 @@
 #define DAYS_OF_MONTH    31 // 달의 일수
 
 #define STUDENTS 5
-#define SIZE 6
+#define SIZE 7
 
 int get_average(int[], int);
+
+void square_array(int a[], int size);
+void print_array(int a[], int size);
+void square_element(int e);
 
 
 int main()
@@ -1539,7 +1543,7 @@ int A = a + b;
 cout << a << "+" << b << "=" << A << endl;
 */
 
-/*조건문을 이용하여 짝수 홀수별 구분하기*/
+/*조건문을 이용하여 짝수 홀수별 구분하기
 int n;
 string a;
 cin >> n;
@@ -1552,10 +1556,28 @@ else {
 }
 
 cout << a << endl;
+*/
+
+/*배열을 인자로 쓸 때*/
+
+int list[SIZE] = { 1, 2, 3, 4, 5, 6, 7 };
+
+print_array(list, SIZE);
+square_array(list, SIZE); // 배열은 원본이 전달된다.
+print_array(list, SIZE);
+
+printf("%3d\n", list[6]);
+square_element(list[6]); // 배열 요소는 복사본이 전달된다.
+printf("%3d\n", list[6]);
+
 
 return 0;
 
 }
+
+
+
+
 
 /*
 int get_average(int score[], int n)                        //위에서 선언한 평균을 구하는 함수의 정의문 ( 정수형 결과값을 반환하는 평균이라는 식별자의 함수로 매게변수로 스코어라는 배열과 정수형 n을 받는다.
@@ -1679,7 +1701,7 @@ int solution(int a, int b) {
 }
 */
 
-/*n의배수*/
+/*n의배수
 int solution(int num, int n) {
 	int answer = 0;
 
@@ -1688,3 +1710,27 @@ int solution(int num, int n) {
 
 	else
 		return 0;
+*/
+
+/*함수정의문*/
+void square_array(int a[], int size)
+{
+	int i;
+	for(i = 0; i < size; i++)
+	a[i] = a[i] * a[i];
+
+}
+
+void square_element(int e)
+{
+	e = e * e;
+}
+
+void print_array(int a[], int size)
+{
+	int i;
+
+	for(i = 0; i < size; i++)
+	printf("%3d ", a[i]);
+	printf("\n");
+}
