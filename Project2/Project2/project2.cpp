@@ -1843,21 +1843,39 @@ int seq_search(int list[], int n, int key)
 
 */
 
-/*이진탐색*/
+/*이진탐색
 int binary_search(int list[], int n, int key)
 {
-	int low high middle; low, high, middle;
-	low = 0;
-	high = n - 1;
-	while (low <= high) { // 아직 숫자들이 남아있으면
-		middle = (low + high) / 2; // 중간 요소 결정
-		if (y[]) key == list[middle] ) // 일치하면 탐색 성공
-		return middle;
-		else if (key > list[middle])// 중간 원소보다 크다면
-			low = middle + 1; // 새로운 값으로 low 설정
+   int low, high, middle;
+   low = 0;
+   high = n - 1;
+
+   while (low <= high){                // 아직 숫자들이 남아있으면
+		middle = (low + high) / 2;     // 중간 요소 결정
+		if (key[] == list[middle] )    // 일치하면 탐색 성공
+		   return middle;
+		else if (key > list[middle])   // 중간 원소보다 크다면
+			low = middle + 1;          // 새로운 값으로 low 설정
 		else
-			high = middle - 1; // 새로운 값으로 high 설정
+			high = middle - 1;         // 새로운 값으로 high 설정
 	}
 	return -1;
 }
 
+*/
+/*2차원 배열 활용*/
+int main(void)
+{
+	int s[3][5]; // 2차원 배열 선언
+	int i, j; // 2개의 인덱스 변수
+	int value = 0; // 배열 원소에 저장되는 값
+
+	for (i = 0; i < 3; i++)
+		for (j = 0; j < 5; j++)
+			s[i][j] = value++;
+
+	for (i = 0; i < 3; i++)
+		for (j = 0; j < 5; j++)
+			printf("%d\n", s[i][j]);
+	return 0;
+}
