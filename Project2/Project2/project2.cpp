@@ -11,18 +11,19 @@
 //#define INVESTMENT 10000000    //초기 투자금
 //#define YEARS     10      // 투자 기간
 
-#define START_DAY    3      // 첫번째 날이 수요일 
-#define DAYS_OF_MONTH    31 // 달의 일수
+//#define START_DAY    3      // 첫번째 날이 수요일 
+//#define DAYS_OF_MONTH    31 // 달의 일수
 
-#define STUDENTS 5
-#define SIZE 7
+//#define STUDENTS 5
+//#define SIZE 7
 
+/*함수선언
 int get_average(int[], int);
 
 void square_array(int a[], int size);
 void print_array(int a[], int size);
 void square_element(int e);
-
+*/
 
 int main()
 {
@@ -1558,7 +1559,7 @@ else {
 cout << a << endl;
 */
 
-/*배열을 인자로 쓸 때*/
+/*배열을 인자로 쓸 때
 
 int list[SIZE] = { 1, 2, 3, 4, 5, 6, 7 };
 
@@ -1569,6 +1570,12 @@ print_array(list, SIZE);
 printf("%3d\n", list[6]);
 square_element(list[6]); // 배열 요소는 복사본이 전달된다.
 printf("%3d\n", list[6]);
+*/
+
+
+
+
+
 
 
 return 0;
@@ -1712,7 +1719,7 @@ int solution(int num, int n) {
 		return 0;
 */
 
-/*함수정의문*/
+/*함수정의문
 void square_array(int a[], int size)
 {
 	int i;
@@ -1734,3 +1741,4 @@ void print_array(int a[], int size)
 	printf("%3d ", a[i]);
 	printf("\n");
 }
+*/
