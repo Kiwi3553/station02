@@ -1742,3 +1742,104 @@ void print_array(int a[], int size)
 	printf("\n");
 }
 */
+
+/*선택정렬과 버블정렬
+#include <stdio.h>
+#define SIZE 10
+
+void selection_sort(int list[], int n);
+void print_list(int list[], int n);
+
+int main(void)
+{
+	int grade[SIZE] = { 3, 2, 9, 7, 1, 4, 8, 0, 6, 5 };
+
+	//원래의 배열 출력
+	printf("원래의 배열\n");
+	print_list(grade, SIZE);
+
+	selection_sort(grade, SIZE);
+
+	// 정렬된 배열 출력
+	printf("정렬된 배열\n");
+	print list(grade, SIZE);
+
+	return 0;
+}
+
+void print_list(int list[], int n)
+{
+	int i;
+	for (i = 0; i < n; i++)
+		printf("%d ", list[i]);
+	printf("\n");
+}
+
+void selection_sort(int list[], int n)
+{
+	int i, j, temp, min;
+
+	for (i = 0; i < n - 1; i++)
+	{
+		min = i;
+
+		for (j = i + 1; j < n; j++) // 최소값 탐색
+		{
+			if (list[j] < list[min])
+				min = j;
+		}
+
+		// i번째 원소와 min 위치의 원소를 교환
+		temp = list[i];
+		list[i] = list[min];
+		list[min] = temp;
+	}
+
+}
+
+void bubble_sort(int list[], int n)
+{
+   int i, scan, temp;
+
+   // 스캔 회수를 제어하기 위한 루프
+   for(scan=0; scan < n-1; scan++)
+   {
+   
+   // 인접값 비교 회수를 제어하기 위한 루프
+      for(i = 0; i < n-1; i++)
+      {
+      // 인접값 비교 및 교환
+         if( list[i] > list[i+1] )
+         {
+          temp = list[i];
+          list[i] = list[i+1];
+          list[i+1] = temp;
+         }
+      }
+   }
+}
+/*순차탐색*/
+#include <stdio.h>
+#define SIZE 6
+int seq_search(int list[], int n, int key);
+int main(void)
+{
+	int key;
+	int grade[SIZE] = { 10, 20, 30, 40, 50, 60 };
+	printf("탐색할 값을 입력하시오:");
+	scanf("%d", &key);
+	printf("탐색 결과 = %d\n", seq_search(grade, SIZE, key));
+	return 0;
+}
+int seq_search(int list[], int n, int key)
+{
+	int i;
+	for (i = 0; i < SIZE; i++)
+		if (list[i] == key)
+			return i; // 탐색이 성공하면 인덱스 반환
+	
+		return -1; // 탐색이 실패하면 -1 반환
+}
+
+
+
