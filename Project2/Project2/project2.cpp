@@ -1863,7 +1863,7 @@ int binary_search(int list[], int n, int key)
 }
 
 */
-/*2차원 배열 활용*/
+/*2차원 배열 활용
 int main(void)
 {
 	int s[3][5]; // 2차원 배열 선언
@@ -1879,3 +1879,13 @@ int main(void)
 			printf("%d\n", s[i][j]);
 	return 0;
 }
+*/
+
+/*포인터 선언*/
+char c = 'A';                    // 문자형 변수
+float f = 36 5; f = 36.5;        // 실수형 변수
+double d = 3.141592;             // 실수형 변수
+
+char * pc = &c;                  // 문자를 가리키는 포인터 pc
+float * pf = &f;                 // 실수를 가리키는 포인터 pf
+double * pd = &d;                // 실수를 가리키는 포인터 p
