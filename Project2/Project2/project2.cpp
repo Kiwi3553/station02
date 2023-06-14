@@ -1604,7 +1604,7 @@ q = &i;                  // 포인터q가 i를 가리킨다 = 포인터 q와 변수 i를 연결
 printf("i=%d\n", i);
 */
 
-/*간접 참조 연산자와 증감 연산자*/
+/*간접 참조 연산자와 증감 연산자
 int i = 10;
 int* pi = &i;
 
@@ -1613,7 +1613,15 @@ printf("i = %d, pi = %p\n", i, pi);
 printf("i = %d, pi = %p\n", i, pi);
 *pi++;
 printf("i = %d, pi = %p\n", i, pi);
+*/
 
+/*포인터와 배열*/
+int a[] = { 10,20,30,40,50 };
+
+printf("a = %p\n",a);
+printf("a + 1 = %p\n",a+1);
+printf("*a = %d\n",*a);
+printf("*(a+1) = %d\n",*(a + 1));
 
 return 0;
 
