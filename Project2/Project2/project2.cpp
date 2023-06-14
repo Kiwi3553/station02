@@ -1,9 +1,9 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-#include<stdlib.h>
+//#include<stdlib.h>
 #include <math.h>
-#include <iostream>
-#include <string>
+//#include <iostream>
+//#include <string>
 
 //using namespace std;
 
@@ -1572,6 +1572,22 @@ square_element(list[6]); // 배열 요소는 복사본이 전달된다.
 printf("%3d\n", list[6]);
 */
 
+char c = 'A';
+int i = 10000;
+double d = 6.78;
+
+char*pc = &c;
+int* pi = &i;
+double* pd = &d;
+
+(*pc)++;
+*pi + 1;
+*pd += 1;
+
+printf("c=%c\n",c);
+printf("i=%d\n",i);
+printf("d=%f\n",d);
+
 
 
 return 0;
@@ -1887,7 +1903,7 @@ float * pf = &f;                 // 실수를 가리키는 포인터 pf
 double * pd = &d;                // 실수를 가리키는 포인터 p
 */
 
-/*포인터 예제*/
+/*포인터 예제
 {
 	int i = 3000;
 	int* p = &i; // 변수와 포인터 연결
@@ -1899,3 +1915,4 @@ double * pd = &d;                // 실수를 가리키는 포인터 p
 
 	return 0;
 }
+*/
