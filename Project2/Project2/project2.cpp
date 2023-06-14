@@ -1590,7 +1590,7 @@ printf("i=%d\n",i);
 printf("d=%f\n",d);
 */
 
-/*포인터 예제2*/
+/*포인터 예제2
 
 int i = 10000;
 int* p, * q;
@@ -1602,6 +1602,20 @@ q = &i;                  // 포인터q가 i를 가리킨다 = 포인터 q와 변수 i를 연결
 *q = *q + 1;
 
 printf("i=%d\n", i);
+*/
+
+/*간접 참조 연산자와 증감 연산자*/
+int i = 10;
+int* pi = &i;
+
+printf("i = %d, pi = %p\n", i, pi);
+(*pi)++;
+printf("i = %d, pi = %p\n", i, pi);
+*pi++;
+printf("i = %d, pi = %p\n", i, pi);
+
+
+return 0;
 
 
 }
