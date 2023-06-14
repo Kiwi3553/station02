@@ -1572,6 +1572,7 @@ square_element(list[6]); // 배열 요소는 복사본이 전달된다.
 printf("%3d\n", list[6]);
 */
 
+/*포인터 예제
 char c = 'A';
 int i = 10000;
 double d = 6.78;
@@ -1587,10 +1588,21 @@ double* pd = &d;
 printf("c=%c\n",c);
 printf("i=%d\n",i);
 printf("d=%f\n",d);
+*/
 
+/*포인터 예제2*/
 
+int i = 10000;
+int* p, * q;
 
-return 0;
+p = &i;                  // 포인터p가 i를 가리킨다 = 포인터 p와 변수 i를 연결 
+q = &i;                  // 포인터q가 i를 가리킨다 = 포인터 q와 변수 i를 연결
+
+*p = *p + 1;
+*q = *q + 1;
+
+printf("i=%d\n", i);
+
 
 }
 
