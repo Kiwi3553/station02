@@ -1632,7 +1632,7 @@ printf("code1=%c, code1=%d\n", code1,code1);
 printf("code2=%c, code2=%d\n", code2,code2);
 */
 
-/*문자 배열에 문자를 저장*/
+/*문자 배열에 문자를 저장
 char str[] = "komputer";
 int i;
 
@@ -1644,6 +1644,16 @@ printf("\n");
 
 for (i = 0; i < 8; i++)
 	printf("%c", str[i]);
+*/
+
+/*문자열 길이 계산 */
+char str[30] = "C language is easy";
+int i = 0;
+
+while (str[i] != 0)
+	i++;
+
+printf("문자열\"%s\"의 길이는 %d입니다.\n", str, i);
 
 
 return 0;
