@@ -1615,13 +1615,21 @@ printf("i = %d, pi = %p\n", i, pi);
 printf("i = %d, pi = %p\n", i, pi);
 */
 
-/*포인터와 배열*/
+/*포인터와 배열
 int a[] = { 10,20,30,40,50 };
 
 printf("a = %p\n",a);
 printf("a + 1 = %p\n",a+1);
 printf("*a = %d\n",*a);
 printf("*(a+1) = %d\n",*(a + 1));
+*/
+
+/*문자 상수*/
+char code1 = 'A';
+char code2 = 65;
+
+printf("code1=%c, code1=%d\n", code1,code1);
+printf("code2=%c, code2=%d\n", code2,code2);
 
 return 0;
 
