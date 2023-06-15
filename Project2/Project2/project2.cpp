@@ -1656,10 +1656,30 @@ while (str[i] != 0)
 printf("문자열\"%s\"의 길이는 %d입니다.\n", str, i);
 */
 
-/*문자열 연결*/
+/*문자열 연결
 char dst[12] = "Hello";
 char src[6] = "World";
 strcat(dst, src);
+*/
+
+/*strcmp함수*/
+char s1[80]; // 첫번째 단어를 저장할 문자배열
+char s2[]; 80 // 두번째 단어를 저장할 문자배열
+int result;
+
+printf("첫번째 단어를 입력하시오:");
+scanf("%s", s1);
+printf("두번째 단어를 입력하시오:");
+scanf("%s", s2);
+
+result = strcmp(s1, s2);
+
+if (result < 0)
+	printf("%s가 %s보다 앞에 있읍니다.\n", s1, s2);
+else if (result == 0)
+	printf("%s가 %s와 같습니다.\n", s1, s2);
+else
+	printf("%s가 %s보다 뒤에 있습니다.\n", s1, s2);
 
 
 return 0;
