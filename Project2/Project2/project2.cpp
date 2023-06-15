@@ -1646,7 +1646,7 @@ for (i = 0; i < 8; i++)
 	printf("%c", str[i]);
 */
 
-/*문자열 길이 계산 */
+/*문자열 길이 계산 
 char str[30] = "C language is easy";
 int i = 0;
 
@@ -1654,6 +1654,12 @@ while (str[i] != 0)
 	i++;
 
 printf("문자열\"%s\"의 길이는 %d입니다.\n", str, i);
+*/
+
+/*문자열 연결*/
+char dst[12] = "Hello";
+char src[6] = "World";
+strcat(dst, src);
 
 
 return 0;
