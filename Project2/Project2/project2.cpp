@@ -1624,12 +1624,27 @@ printf("*a = %d\n",*a);
 printf("*(a+1) = %d\n",*(a + 1));
 */
 
-/*문자 상수*/
+/*문자 상수
 char code1 = 'A';
 char code2 = 65;
 
 printf("code1=%c, code1=%d\n", code1,code1);
 printf("code2=%c, code2=%d\n", code2,code2);
+*/
+
+/*문자 배열에 문자를 저장*/
+char str[] = "komputer";
+int i;
+
+for (i = 0; i < 8; i++)
+	printf("%c", str[i]);
+
+str[0] = 'c';
+printf("\n");
+
+for (i = 0; i < 8; i++)
+	printf("%c", str[i]);
+
 
 return 0;
 
