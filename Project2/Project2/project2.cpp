@@ -1722,7 +1722,7 @@ struct employee{
 */
 
 
-/*구조체를 멤버로 가지는 구조체*/
+/*구조체를 멤버로 가지는 구조체
 struct date{         //구조체 선언
 	int month;
 	int day;
@@ -1744,6 +1744,20 @@ s1.dob.month = 03;
 s1.dob.day = 29;
 
 printf("%d %d %d", s1.dob.year, s1.dob.month, s1.dob.day);
+
+*/
+
+/*구조체 선언 예제*/
+struct student s;
+
+s.number = 20070001;
+strcpy(s.name, "홍길동");
+s.height = 180.2;
+
+printf("학번:%d\n", s.number);
+printf("이름:%s\n", s.name);
+printf("신장:%f\n", s.height);
+
 
 return 0;
 
