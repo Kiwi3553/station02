@@ -1779,7 +1779,7 @@ dist = sqrt(xdiff * xdiff + ydiff * ydiff);
 printf("두 점 사이의 거리는 %f입니다.\n", dist);
 */
 
-/*사각형 면적과 둘레 구하기*/
+/*사각형 면적과 둘레 구하기
 struct point {
 	int x;
 	int y;
@@ -1812,6 +1812,21 @@ int main()
 
 
 }
+*/
+ /*열거형 예제*/
+
+enum days { MON, TUE, WED, THU, FRI, SAT, SUN };
+char* days_name[] = {
+"monday", "tuesday", "wednesday", "thursday", "friday",
+"saturday", "sunday"};
+
+int main(void)
+{
+	enum days d;
+	for (d = MON; d <= SUN; d++)
+	{
+		printf("%d번째 요일의 이름은 %s입니다.", d, days_name[d]);
+	}
 
 return 0;
 
