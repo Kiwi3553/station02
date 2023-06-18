@@ -1682,7 +1682,7 @@ else
 	printf("%s가 %s보다 뒤에 있습니다.\n", s1, s2);
 */
 
-/*구조체 선언의 예*/
+/*구조체 선언의 예
 //x와y로 이루어지는 화면 값의 좌표
 struct point {
 	int x;        //x좌표
@@ -1719,6 +1719,31 @@ struct employee{
 	int gender;
 	int salary; ]
 };
+*/
+
+
+/*구조체를 멤버로 가지는 구조체*/
+struct date{         //구조체 선언
+	int month;
+	int day;
+	int year;
+};
+
+struct student{       //구조체 선언
+	int number;
+	char name[10];
+	struct date dob;   //구조체 안에 구조체 포함
+	double height;
+
+};
+
+struct student s1;     //구조체 변수 선언
+
+s1.dob.year = 1983;
+s1.dob.month = 03;
+s1.dob.day = 29;
+
+printf("%d %d %d", s1.dob.year, s1.dob.month, s1.dob.day);
 
 return 0;
 
