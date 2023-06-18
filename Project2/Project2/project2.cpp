@@ -1747,7 +1747,7 @@ printf("%d %d %d", s1.dob.year, s1.dob.month, s1.dob.day);
 
 */
 
-/*구조체 선언 예제*/
+/*구조체 선언 예제
 struct student s;
 
 s.number = 20070001;
@@ -1757,7 +1757,26 @@ s.height = 180.2;
 printf("학번:%d\n", s.number);
 printf("이름:%s\n", s.name);
 printf("신장:%f\n", s.height);
+*/
 
+
+/*두 점 사이의 거리 구하기*/
+struct point p1, p2;
+int xdiff, ydiff;
+double dist;
+
+printf("점의 좌표를 입력하시오(x, y):");
+scanf("%d %d", &p1.x, &p1.y);
+
+printf("점의 좌표를 입력하시오(x, y):");
+scanf("%d %d", &p2.x, &p2.y);
+
+xdiff = p2.x - p1.x;
+ydiff = p2.y - p1.y;
+
+dist = sqrt(xdiff * xdiff + ydiff * ydiff);
+
+printf("두 점 사이의 거리는 %f입니다.\n", dist);
 
 return 0;
 
