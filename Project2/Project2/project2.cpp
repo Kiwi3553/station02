@@ -1760,7 +1760,7 @@ printf("신장:%f\n", s.height);
 */
 
 
-/*두 점 사이의 거리 구하기*/
+/*두 점 사이의 거리 구하기
 struct point p1, p2;
 int xdiff, ydiff;
 double dist;
@@ -1777,6 +1777,41 @@ ydiff = p2.y - p1.y;
 dist = sqrt(xdiff * xdiff + ydiff * ydiff);
 
 printf("두 점 사이의 거리는 %f입니다.\n", dist);
+*/
+
+/*사각형 면적과 둘레 구하기*/
+struct point {
+	int x;
+	int y;
+};
+
+struct rec{
+	struct point p1
+	struct point p2
+
+};
+
+int main()
+{
+	struct rec r;
+	int width, height, area, peri;
+
+	printf("왼쪽 상단의 좌표를 입력하시오.\n");
+	scanf("%d %d", &r.p1.x, &r.p1.y);
+
+	printf("오른쪽 상단의 좌표를 입력하시오.\n");
+	scanf("%d %d", &r.p2.x, &r.p2.y);
+
+	width = r.p2.x - r.p1.x;
+	height = r.p2.y - r.p1.y;
+
+	area = width * height;
+	peri = width * 2 + height * 2;
+
+	printf("사각형의 면적은 %d며 둘레는 %d입니다.", area, peri);
+
+
+}
 
 return 0;
 
