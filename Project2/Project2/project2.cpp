@@ -1662,7 +1662,7 @@ char src[6] = "World";
 strcat(dst, src);
 */
 
-/*strcmp함수*/
+/*strcmp함수
 char s1[80]; // 첫번째 단어를 저장할 문자배열
 char s2[]; 80 // 두번째 단어를 저장할 문자배열
 int result;
@@ -1680,7 +1680,45 @@ else if (result == 0)
 	printf("%s가 %s와 같습니다.\n", s1, s2);
 else
 	printf("%s가 %s보다 뒤에 있습니다.\n", s1, s2);
+*/
 
+/*구조체 선언의 예*/
+//x와y로 이루어지는 화면 값의 좌표
+struct point {
+	int x;        //x좌표
+	int y;        //y좌표
+};
+
+//복소수
+struct complex {
+	double real;     //실수부
+	double imag;     //허수부
+};
+
+
+//날짜
+struct date{
+	int month;
+	int day;
+	int year;
+
+};
+
+//사각형
+struct rect {
+	int x;
+	int y;
+	int width;
+	int height;
+};
+
+//직원
+struct employee{
+	char name[20;
+	int age;
+	int gender;
+	int salary; ]
+};
 
 return 0;
 
