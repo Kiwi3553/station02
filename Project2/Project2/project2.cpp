@@ -26,14 +26,14 @@ void square_element(int e);
 */
 
 
-#define SIZE 3
+//#define SIZE 3
 
-struct student{
+/*struct student {
 	int number;
 	char name[20];
 	double height;
 
-};
+};*/
 
 int main()
 {
@@ -1839,7 +1839,7 @@ int main(void)
 	}
 */
 
-/*구조체 배열 예제*/
+/*구조체 배열 예제
 struct student list[SIZE];
 int i;
 
@@ -1858,10 +1858,17 @@ for (i = 0; i < SIZE; i++)
 {
 	printf("%d %S %f", list[i].number, list[i].name, list[i].height);
 }
+*/
 
+/*포인터를 통한 구조체 참조*/
+struct student s = { 20070001, "홍길동", 180.23 };
+struct student* p;
 
+p = &s;
 
-
+printf("학번=%d 이름=%s 키=%f \n", s.number, s.name, s.height);
+printf("학번=%d 이름=%s 키=%f \n", (*p).number, (*p).name, (*p).height);
+printf("학번=%d 이름=%s 키=%f \n", p->number, p->name, p->height);
 
 return 0;
 
