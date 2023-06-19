@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-//#include<stdlib.h>
+#include<stdlib.h>
 #include <math.h>
 //#include <iostream>
 //#include <string>
@@ -24,6 +24,16 @@ void square_array(int a[], int size);
 void print_array(int a[], int size);
 void square_element(int e);
 */
+
+
+#define SIZE 3
+
+struct student{
+	int number;
+	char name[20];
+	double height;
+
+};
 
 int main()
 {
@@ -1813,7 +1823,7 @@ int main()
 
 }
 */
- /*열거형 예제*/
+ /*열거형 예제
 
 enum days { MON, TUE, WED, THU, FRI, SAT, SUN };
 char* days_name[] = {
@@ -1827,6 +1837,31 @@ int main(void)
 	{
 		printf("%d번째 요일의 이름은 %s입니다.", d, days_name[d]);
 	}
+*/
+
+/*구조체 배열 예제*/
+struct student list[SIZE];
+int i;
+
+for(i = 0; i < SIZE; i++)
+{
+	printf("학번을 입력하시오:");
+	scanf("%d", &list[i].number);
+	printf("이름을 입력하시오:");
+	scanf("%s", list[i].name);
+	printf("신장을 입력하시오(실수):");
+	scanf('%f', list[i].height);
+
+}
+
+for (i = 0; i < SIZE; i++)
+{
+	printf("%d %S %f", list[i].number, list[i].name, list[i].height);
+}
+
+
+
+
 
 return 0;
 

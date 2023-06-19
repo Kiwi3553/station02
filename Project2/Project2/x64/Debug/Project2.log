@@ -1,17 +1,9 @@
 ﻿  project2.cpp
-C:\Users\user\Desktop\직면\2023 취업준비\C++\강의용\station02\Project2\Project2\project2.cpp(1764,14): error C2079: 'p1'은(는) 정의되지 않은 struct 'point'을(를) 사용합니다.
-C:\Users\user\Desktop\직면\2023 취업준비\C++\강의용\station02\Project2\Project2\project2.cpp(1764,18): error C2079: 'p2'은(는) 정의되지 않은 struct 'point'을(를) 사용합니다.
-C:\Users\user\Desktop\직면\2023 취업준비\C++\강의용\station02\Project2\Project2\project2.cpp(1769,20): error C2224: '.x' 왼쪽에는 구조체/공용 구조체 형식이 있어야 합니다.
-C:\Users\user\Desktop\직면\2023 취업준비\C++\강의용\station02\Project2\Project2\project2.cpp(1769,27): error C2224: '.y' 왼쪽에는 구조체/공용 구조체 형식이 있어야 합니다.
-C:\Users\user\Desktop\직면\2023 취업준비\C++\강의용\station02\Project2\Project2\project2.cpp(1769,7): warning C4473: 'scanf': 서식 문자열에 대한 인수가 충분하게 전달되지 않았습니다.
-C:\Users\user\Desktop\직면\2023 취업준비\C++\강의용\station02\Project2\Project2\project2.cpp(1769,7): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 2개 필요하지만 0개가 제공되었습니다.
-C:\Users\user\Desktop\직면\2023 취업준비\C++\강의용\station02\Project2\Project2\project2.cpp(1769,7): message : 누락된 variadic 인수 1이(가) 서식 문자열 '%d'에 필요합니다.
-C:\Users\user\Desktop\직면\2023 취업준비\C++\강의용\station02\Project2\Project2\project2.cpp(1772,20): error C2224: '.x' 왼쪽에는 구조체/공용 구조체 형식이 있어야 합니다.
-C:\Users\user\Desktop\직면\2023 취업준비\C++\강의용\station02\Project2\Project2\project2.cpp(1772,27): error C2224: '.y' 왼쪽에는 구조체/공용 구조체 형식이 있어야 합니다.
-C:\Users\user\Desktop\직면\2023 취업준비\C++\강의용\station02\Project2\Project2\project2.cpp(1772,7): warning C4473: 'scanf': 서식 문자열에 대한 인수가 충분하게 전달되지 않았습니다.
-C:\Users\user\Desktop\직면\2023 취업준비\C++\강의용\station02\Project2\Project2\project2.cpp(1772,7): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 2개 필요하지만 0개가 제공되었습니다.
-C:\Users\user\Desktop\직면\2023 취업준비\C++\강의용\station02\Project2\Project2\project2.cpp(1772,7): message : 누락된 variadic 인수 1이(가) 서식 문자열 '%d'에 필요합니다.
-C:\Users\user\Desktop\직면\2023 취업준비\C++\강의용\station02\Project2\Project2\project2.cpp(1774,12): error C2224: '.x' 왼쪽에는 구조체/공용 구조체 형식이 있어야 합니다.
-C:\Users\user\Desktop\직면\2023 취업준비\C++\강의용\station02\Project2\Project2\project2.cpp(1774,19): error C2224: '.x' 왼쪽에는 구조체/공용 구조체 형식이 있어야 합니다.
-C:\Users\user\Desktop\직면\2023 취업준비\C++\강의용\station02\Project2\Project2\project2.cpp(1775,12): error C2224: '.y' 왼쪽에는 구조체/공용 구조체 형식이 있어야 합니다.
-C:\Users\user\Desktop\직면\2023 취업준비\C++\강의용\station02\Project2\Project2\project2.cpp(1775,19): error C2224: '.y' 왼쪽에는 구조체/공용 구조체 형식이 있어야 합니다.
+C:\Users\user\Desktop\직면\2023 취업준비\C++\강의용\station02\Project2\Project2\project2.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\user\Desktop\직면\2023 취업준비\C++\강의용\station02\Project2\Project2\project2.cpp(1484,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\user\Desktop\직면\2023 취업준비\C++\강의용\station02\Project2\Project2\project2.cpp(1853,12): warning C4047: '함수': 'const char *const '의 간접 참조 수준이 'int'과(와) 다릅니다.
+C:\Users\user\Desktop\직면\2023 취업준비\C++\강의용\station02\Project2\Project2\project2.cpp(1853,8): warning C4024: 'scanf': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+C:\Users\user\Desktop\직면\2023 취업준비\C++\강의용\station02\Project2\Project2\project2.cpp(1859,9): warning C4477: 'printf' : 서식 문자열 '%S'에 'unsigned short *' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'char *'입니다.
+C:\Users\user\Desktop\직면\2023 취업준비\C++\강의용\station02\Project2\Project2\project2.cpp(1859,9): message : 서식 문자열에서 '%hS'을(를) 사용하는 것이 좋습니다.
+C:\Users\user\Desktop\직면\2023 취업준비\C++\강의용\station02\Project2\Project2\project2.cpp(1859,9): message : 서식 문자열에서 '%TS'을(를) 사용하는 것이 좋습니다.
+  Project2.vcxproj -> C:\Users\user\Desktop\직면\2023 취업준비\C++\강의용\station02\Project2\x64\Debug\Project2.exe
