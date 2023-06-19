@@ -59,6 +59,13 @@ struct student {
 	};
 */
 
+/*
+struct vector {
+	float x;
+	float y;
+};
+struct vector get_vector_sum(struct vector*, struct vector*);
+*/
 
 int main()
 {
@@ -1912,7 +1919,7 @@ printf("생년월일 ; %d년 %d월 %d일 \n", s.dob->year, s.dob->month, s.dob->day);
 */
 
 
-/*자체 참조 구조체*/
+/*자체 참조 구조체
 struct student s1 = { 30, "Kim", 167.2, NULL };
 struct student s2 = { 31, "Park", 179.1, NULL };
 struct student *first = NULL;
@@ -1930,8 +1937,16 @@ while (current != NULL)
 		current->name, current->height);
 	current = current->next;
 }
+*/
 
+/*
+struct vector a = { 2.0, 3.0 };
+struct vector b = { 5.0, 6.0 };
+struct vector sum;
 
+sum = get_vector_sum(&a, &b);
+printf("벡터의 합은 (%f, %f)입니다.\n", sum.x, sum.y);
+*/
 
 
 return 0;
@@ -2260,4 +2275,14 @@ double * pd = &d;                // 실수를 가리키는 포인터 p
 
 	return 0;
 }
+*/
+
+/*
+struct vector get_vector_sum(struct vector *a, struct vector *b)
+{
+	struct vector result;
+	result.x = a->x + b->x;
+	result.y = a->y + b->y;
+
+	return result;
 */
