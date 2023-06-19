@@ -50,6 +50,14 @@ struct student {
 };
 */
 
+/*
+struct student {
+	int number;
+	char name[10];
+	double height;
+	struct student* next;
+	};
+*/
 
 
 int main()
@@ -1890,7 +1898,7 @@ printf("학번=%d 이름=%s 키=%f \n", p->number, p->name, p->height);
 
 
 
-/*포인터를 멤버로 가지는 구조체*/
+/*포인터를 멤버로 가지는 구조체
 struct date d = { 3,20,1980 };
 struct student s = { 20070001,"kim",180.2 };
 
@@ -1901,6 +1909,30 @@ printf("이름:%s\n", s.name);
 printf("신장:%d\n", s.height);
 
 printf("생년월일 ; %d년 %d월 %d일 \n", s.dob->year, s.dob->month, s.dob->day);
+*/
+
+
+/*자체 참조 구조체*/
+struct student s1 = { 30, "Kim", 167.2, NULL };
+struct student s2 = { 31, "Park", 179.1, NULL };
+struct student *first = NULL;
+struct student *current = NULL; 
+
+first = &s1;
+s1.next = &s2;
+s2.next = NULL;
+
+current = first;
+while (current != NULL)
+
+{
+	printf("학생의 번호=%d 이름=%s, 키=%f\n", current->number,
+		current->name, current->height);
+	current = current->next;
+}
+
+
+
 
 return 0;
 
