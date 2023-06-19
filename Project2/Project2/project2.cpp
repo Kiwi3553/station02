@@ -35,6 +35,23 @@ void square_element(int e);
 
 };*/
 
+/*
+struct date {
+	int month;
+	int day;
+	int year;
+};
+
+struct student {
+	int number;
+	char name[20];
+	double height;
+	struct date* dob;
+};
+*/
+
+
+
 int main()
 {
 	//이것은 주석이다.
@@ -1860,7 +1877,7 @@ for (i = 0; i < SIZE; i++)
 }
 */
 
-/*포인터를 통한 구조체 참조*/
+/*포인터를 통한 구조체 참조
 struct student s = { 20070001, "홍길동", 180.23 };
 struct student* p;
 
@@ -1869,6 +1886,21 @@ p = &s;
 printf("학번=%d 이름=%s 키=%f \n", s.number, s.name, s.height);
 printf("학번=%d 이름=%s 키=%f \n", (*p).number, (*p).name, (*p).height);
 printf("학번=%d 이름=%s 키=%f \n", p->number, p->name, p->height);
+*/
+
+
+
+/*포인터를 멤버로 가지는 구조체*/
+struct date d = { 3,20,1980 };
+struct student s = { 20070001,"kim",180.2 };
+
+s.dob = &d;
+
+printf("학번:%d\n", s.number);
+printf("이름:%s\n", s.name);
+printf("신장:%d\n", s.height);
+
+printf("생년월일 ; %d년 %d월 %d일 \n", s.dob->year, s.dob->month, s.dob->day);
 
 return 0;
 
